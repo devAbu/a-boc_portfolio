@@ -75,6 +75,7 @@ body {
 }
 .portfolios .project-2 img {
   margin-bottom: 1.5em;
+  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
 }
 .portfolios .project-3 .project-description {
   background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
