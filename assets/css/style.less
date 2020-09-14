@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@primaryColor: darken(gold,10%);
+@secondaryColor: lighten(black, 45%);
+@box-shadow-right: 6px 6px 10px -3px rgba(150,142,150,0.86);
+@box-shadow-left: -6px 6px 10px -3px rgba(150,142,150,0.86);
+
+@gradient-from-left: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
+@gradient-from-right: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
+
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f7;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.title, .contact{
+    text-align: center;
+    padding: 2em;
+    
+    .head{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    small{
+        font-size: 17px;
+        line-height: 28px;
+        color: @secondaryColor;
+        margin-bottom: 20px;
+    }
+}
+
+.portfolios{
+    margin: 2rem 0 0 0;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    img{
+        width: 100%;
+        border-radius: 10%;
+        box-shadow: @box-shadow-right;
+    }
+    .project-description{
+        padding: 2rem 1rem;
+        
+        margin-bottom: 1.5em;
+        border-radius: 10%;
+        
+
+        h1{
+            color: @primaryColor;
+            text-align: left;
+        }
+        p{
+            margin-top: 1rem;
+            text-align: left;
+            color: @secondaryColor
+        }
+    }
+    .projects{
+        margin-bottom: 3rem;
+    }
+    .project-1{
+        .project-description{
+            background-image: @gradient-from-left;
+            box-shadow: @box-shadow-right;
+        }
+    }
+    .project-2{
+        .project-description{
+            background-image: @gradient-from-right;
+            box-shadow: @box-shadow-left;
+        }
+        img{
+            margin-bottom: 1.5em;
+        }
+    }
+    .project-3{
+        .project-description{
+            background-image: @gradient-from-left;
+            box-shadow: @box-shadow-right;
+        }
+    }
+}
+
+.contact{
+    background-color: gold;
+    padding: 2em;
+    input, textarea{
+        border: none;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 1em;
+        width: 85%;
+    }
+    textarea{
+        resize: none;
+    }
+    input[type="button"]{
+        color: white;
+        background-color: @primaryColor;
+        width: 95%;
+    }
+}
+
+::placeholder{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer{
+    color: @primaryColor;
+    padding: 0.5em 2em;
+    a{
+        color: @primaryColor;
+        float: right;
+        svg{
+            margin-right: 10px;
+        }
+    }
+    p{
+        font-size: large;
+        display: inline;
+        
+    }
+}
