@@ -15,25 +15,30 @@
     </section>
 
     <section class="portfolios">
-        <div class="project-1 projects">
+        <div class="project-1 projects lax" data-lax-preset="driftLeft">
+            <div class="project-description">
+                <h1>Project 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Magnam
+                    neque repellat, dolorum
+                    recusandae
+                    ullam
+                    dolores aperiam aspernatur voluptatibus obcaecati impedit et quas fugiat,</p>
+            </div>
+            <img src="assets/images/slika.jpg" alt="Portfolio 1">
+
+        </div>
+        <div class="project-2 projects lax" data-lax-preset="driftRight">
+            <img src="assets/images/slika.jpg" alt="Portfolio 1">
             <div class="project-description">
                 <h1>Project 1</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque repellat, dolorum recusandae
                     ullam
                     dolores aperiam aspernatur voluptatibus obcaecati impedit et quas fugiat,</p>
             </div>
-            <img src="assets/images/slika.jpg" alt="Portfolio 1">
         </div>
-        <div class="project-2 projects">
-            <img src="assets/images/slika.jpg" alt="Portfolio 1">
-            <div class="project-description">
-                <h1>Project 1</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque repellat, dolorum recusandae
-                    ullam
-                    dolores aperiam aspernatur voluptatibus obcaecati impedit et quas fugiat,</p>
-            </div>
-        </div>
-        <div class="project-3 projects">
+        <div class="project-3 projects lax" data-lax-preset="driftLeft">
             <div class="project-description">
                 <h1>Project 3</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque repellat, dolorum recusandae
@@ -68,6 +73,19 @@
 
     <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
 
+    <script src="node_modules/lax.js/lib/lax.min.js"></script>
+
+    <script>
+        window.onload = function () {
+            lax.setup() // init
+
+            document.addEventListener('scroll', function (e) {
+                lax.update(window.scrollY) // update every scroll
+            }, false)
+        }
+    </script>
+
 </body>
+
 
 </html>

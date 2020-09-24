@@ -177,7 +177,9 @@ footer p {
   .portfolios .project-1 .project-description {
     position: relative;
     left: 50px;
-    top: 3em;
+    top: 1em;
+    font-size: 15px;
+    font-weight: 500;
     padding: 1rem 1rem;
   }
   .portfolios .project-2 {
@@ -186,8 +188,10 @@ footer p {
   .portfolios .project-2 .project-description {
     position: relative;
     right: 50px;
-    top: 3em;
+    top: 1em;
     padding: 1rem 1rem;
+    font-size: 15px;
+    font-weight: 500;
   }
   .portfolios .project-3 {
     flex-wrap: nowrap;
@@ -195,13 +199,94 @@ footer p {
   .portfolios .project-3 .project-description {
     position: relative;
     left: 50px;
-    top: 3em;
+    top: 1em;
     padding: 1rem 1rem;
+    font-size: 15px;
+    font-weight: 500;
   }
   .portfolios img {
-    height: 300px;
-    width: 400px;
+    height: 250px;
+    width: 300px;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .portfolios .project-1 {
+    flex-wrap: nowrap;
+  }
+  .portfolios .project-1 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1em;
+    font-size: 17px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-2 {
+    flex-wrap: nowrap;
+  }
+  .portfolios .project-2 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1em;
+    font-size: 17px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-3 {
+    flex-wrap: nowrap;
+  }
+  .portfolios .project-3 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1em;
+    font-size: 17px;
+    padding: 2rem 2rem;
+  }
+  .portfolios img {
+    height: 290px;
+    width: 370px;
+  }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .portfolios .project-1 {
+    flex-wrap: nowrap;
+    margin-left: 33.3%;
+  }
+  .portfolios .project-1 .project-description {
+    position: relative;
+    left: 50px;
+    max-width: 400px;
+    top: 4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-1 .project-description h1 {
+    text-align: right;
+  }
+  .portfolios .project-2 {
+    flex-wrap: nowrap;
+    margin-right: 33.3%;
+  }
+  .portfolios .project-2 .project-description {
+    position: relative;
+    right: 50px;
+    top: 4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-3 {
+    flex-wrap: nowrap;
+    margin-left: 33.3%;
+  }
+  .portfolios .project-3 .project-description {
+    position: relative;
+    left: 50px;
+    top: 4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios img {
+    height: 450px;
+    width: 600px;
+  }
+}
