@@ -18,6 +18,7 @@ body {
   -moz-user-select: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
+  overflow-x: hidden;
 }
 .title,
 .contact {
@@ -869,6 +870,17 @@ footer p {
     position: absolute;
     opacity: 0.4;
     margin: -10%;
+  }
+  .square {
+    z-index: -2;
+    width: 250px;
+    height: 250px;
+    border: 20px inset;
+    border-color: rgba(255, 57, 5, 0.25);
+    opacity: 0.4;
+    position: absolute;
+    right: -100px;
+    float: right;
   }
   .portfolios .project-1 {
     flex-wrap: nowrap;
