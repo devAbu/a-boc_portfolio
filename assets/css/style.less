@@ -70,9 +70,77 @@ div.circle{
   opacity: 0.6;
   position: absolute;
   right: -100px;
-  float: right;
 }
 
+.clip-wrap {
+  position: absolute;
+  opacity: 0.6;
+  left: -100px;
+  margin-top: -10%;
+}
+
+.clip-each {
+  width: 400px;
+  height: 400px;
+}
+
+.clip-each:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+}
+
+.clip-each, .clip-each:after {
+  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  clip-path: url("#octagon-clip");
+}
+
+.border-style-gradient {
+  background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+  background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+}
+
+.border-style-gradient:after {
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+}
+
+.clip-svg{
+  position: absolute;
+}
+
+.plus{
+  background:  rgba(255, 57, 5, 0.25);
+  width: 250px;
+  height: 250px;
+  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  position: absolute;
+  right: 0;
+  opacity: 0.6;
+}
+
+.star{
+  background:  rgba(255, 57, 5, 0.25);
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  opacity: 0.6;  
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  left:0;
+}
+
+.rhombus{
+  background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+  background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);  width: 325px;
+  height: 325px;
+  position: absolute;
+  right: 0;
+  opacity: 0.3;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
 
 .portfolios {
   margin: 2rem 0 0 0;
