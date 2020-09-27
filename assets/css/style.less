@@ -13,8 +13,6 @@
   user-select: none;
 }
 
-
-
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f3f3f7;
@@ -44,111 +42,12 @@ body {
   }
 }
 
-div.circle{
-  position: absolute;
-  opacity: 0.6;
-  margin: -10%;
-
-  svg{
-    height:500px;
-    width:500px;
-
-    circle{
-      stroke:rgba(255, 57, 5, 0.25); 
-      stroke-width:30;
-      fill:transparent;
-    }
-  }
-}
-
-.square{
-  z-index: -2;
-  width: 250px;
-  height: 250px;
-  border: 20px inset;
-  border-color: rgba(255, 57, 5, 0.25);
-  opacity: 0.6;
-  position: absolute;
-  right: -100px;
-}
-
-.clip-wrap {
-  position: absolute;
-  opacity: 0.6;
-  left: -100px;
-  margin-top: -10%;
-}
-
-.clip-each {
-  width: 400px;
-  height: 400px;
-}
-
-.clip-each:after {
-  content: "";
-  position: absolute;
-  background: #fff;
-}
-
-.clip-each, .clip-each:after {
-  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-  clip-path: url("#octagon-clip");
-}
-
-.border-style-gradient {
-  background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
-  background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
-}
-
-.border-style-gradient:after {
-  top: 14px;
-  left: 14px;
-  right: 14px;
-  bottom: 14px;
-}
-
-.clip-svg{
-  position: absolute;
-}
-
-.plus{
-  background:  rgba(255, 57, 5, 0.25);
-  width: 250px;
-  height: 250px;
-  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-  position: absolute;
-  right: 0;
-  opacity: 0.6;
-}
-
-.star{
-  background:  rgba(255, 57, 5, 0.25);
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  opacity: 0.6;  
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  left:0;
-}
-
-.rhombus{
-  background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
-  background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);  width: 325px;
-  height: 325px;
-  position: absolute;
-  right: 0;
-  opacity: 0.3;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
 .portfolios {
   margin: 2rem 0 0 0;
   text-align: center;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-
 
   img {
     width: 100%;
@@ -177,7 +76,7 @@ div.circle{
     margin-bottom: 3rem;
   }
 
-  .project-1 {
+  .project-1, .project-3, .project-5, .project-7, .project-9, .project-11, .project-13, .project-15, .project-17 {
     display: flex;
     flex-wrap: wrap;
 
@@ -187,7 +86,7 @@ div.circle{
     }
   }
 
-  .project-2 {
+  .project-2, .project-4, .project-6, .project-8, .project-10, .project-12, .project-14, .project-16, .project-18 {
     display: flex;
     flex-wrap: wrap;
 
@@ -201,208 +100,6 @@ div.circle{
       box-shadow: @box-shadow-left;
     }
   }
-
-  .project-3 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-left;
-      box-shadow: @box-shadow-right;
-    }
-  }
-
-  .project-4 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-right;
-      box-shadow: @box-shadow-left;
-    }
-
-    img {
-      margin-bottom: 1.5em;
-      box-shadow: @box-shadow-left;
-    }
-  }
-
-  .project-5 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-left;
-      box-shadow: @box-shadow-right;
-    }
-  }
-
-  .project-6 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-right;
-      box-shadow: @box-shadow-left;
-    }
-
-    img {
-      margin-bottom: 1.5em;
-      box-shadow: @box-shadow-left;
-    }
-  }
-
-  .project-7 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-left;
-      box-shadow: @box-shadow-right;
-    }
-  }
-  
-  .project-8 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-right;
-      box-shadow: @box-shadow-left;
-    }
-
-    img {
-      margin-bottom: 1.5em;
-      box-shadow: @box-shadow-left;
-    }
-  }
-
-  .project-9 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-left;
-      box-shadow: @box-shadow-right;
-    }
-  }
-  
-  .project-10 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-right;
-      box-shadow: @box-shadow-left;
-    }
-
-    img {
-      margin-bottom: 1.5em;
-      box-shadow: @box-shadow-left;
-    }
-  }
-
-  .project-11 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-left;
-      box-shadow: @box-shadow-right;
-    }
-  }
-  
-  .project-12 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-right;
-      box-shadow: @box-shadow-left;
-    }
-
-    img {
-      margin-bottom: 1.5em;
-      box-shadow: @box-shadow-left;
-    }
-  }
-
-  .project-13 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-left;
-      box-shadow: @box-shadow-right;
-    }
-  }
-  
-  .project-14{
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-right;
-      box-shadow: @box-shadow-left;
-    }
-
-    img {
-      margin-bottom: 1.5em;
-      box-shadow: @box-shadow-left;
-    }
-  }
-
-  .project-15 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-left;
-      box-shadow: @box-shadow-right;
-    }
-  }
-  
-  .project-16 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-right;
-      box-shadow: @box-shadow-left;
-    }
-
-    img {
-      margin-bottom: 1.5em;
-      box-shadow: @box-shadow-left;
-    }
-  }
-
-  .project-17 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-left;
-      box-shadow: @box-shadow-right;
-    }
-  }
-  
-  .project-18 {
-    display: flex;
-    flex-wrap: wrap;
-
-    .project-description {
-      background-image: @gradient-from-right;
-      box-shadow: @box-shadow-left;
-    }
-
-    img {
-      margin-bottom: 1.5em;
-      box-shadow: @box-shadow-left;
-    }
-  }
-
-
 }
 
 .contact {
@@ -457,235 +154,144 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .portfolios {
-    .project-1 {
+    .project-1 , .project-3, .project-5, .project-7, .project-9, .project-11, .project-13, .project-15, .project-17{
       flex-wrap: nowrap;
 
       .project-description {
         position: relative;
         left: 50px;
-        top: 2.5em;
+        top: 1.2em;
         height: 50%;
         padding: 1rem 1rem;
+        font-size: small;
       }
     }
 
-    .project-2 {
+    .project-2, .project-4, .project-6, .project-8, .project-10, .project-12, .project-14, .project-16, .project-18 {
       flex-wrap: nowrap;
 
       .project-description {
         position: relative;
         right: 50px;
-        top: 2.5em;
+        top: 1.2em;
         height: 50%;
         padding: 1rem 1rem;
+        font-size: small;
       }
     }
-
-    .project-3 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-    .project-4 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-    .project-5 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-    .project-6 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-    .project-7 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-    
-    .project-8 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-    .project-9 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    } 
-    
-    .project-10 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-    .project-11 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    } 
-    
-    .project-12 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-    .project-13 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    } 
-    
-    .project-14 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-    .project-15 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    } 
-    
-    .project-16 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-    .project-17 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    } 
-    
-    .project-18 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 2.5em;
-        height: 50%;
-        padding: 1rem 1rem;
-      }
-    }
-
-   
 
     img {
-      height: 300px;
-      width: 300px;
+      height: 250px;
+      width: 250px;
     }
+  }
+
+  div.circle{
+    position: absolute;
+    opacity: 0.6;
+    margin: -10%;
+  
+    svg{
+      height:500px;
+      width:500px;
+  
+      circle{
+        stroke:rgba(255, 57, 5, 0.25); 
+        stroke-width:30;
+        fill:transparent;
+      }
+    }
+  }
+  
+  .square{
+    z-index: -2;
+    width: 150px;
+    height: 150px;
+    border: 20px inset;
+    border-color: rgba(255, 57, 5, 0.25);
+    opacity: 0.6;
+    position: absolute;
+    right: -100px;
+  }
+  
+  .clip-wrap {
+    position: absolute;
+    opacity: 0.6;
+    left: -100px;
+    margin-top: -15%;
+  }
+  
+  .clip-each {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .clip-each:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+  }
+  
+  .clip-each, .clip-each:after {
+    -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+    clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+    clip-path: url("#octagon-clip");
+  }
+  
+  .border-style-gradient {
+    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+  }
+  
+  .border-style-gradient:after {
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+  }
+  
+  .clip-svg{
+    position: absolute;
+  }
+  
+  .plus{
+    background:  rgba(255, 57, 5, 0.25);
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    position: absolute;
+    opacity: 0.6;
+    left: 0;    
+}
+  
+  .star{
+    background:  rgba(255, 57, 5, 0.25);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    opacity: 0.6;  
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    left: unset;
+    right:0;
+    margin-top: 50px;
+  }
+  
+  .rhombus{
+    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);  
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    right: 0;
+    opacity: 0.3;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
 }
 
 /* Medium devices (landscape tablets, 769px and up) */
 @media only screen and (min-width: 769px) {
   .portfolios {
-    .project-1 {
+    .project-1 , .project-3, .project-5, .project-7, .project-9, .project-11, .project-13, .project-15, .project-17{
       flex-wrap: nowrap;
 
       .project-description {
@@ -698,217 +304,9 @@ footer {
       }
     }
 
-    .project-2 {
+    .project-2, .project-4, .project-6, .project-8, .project-10, .project-12, .project-14, .project-16, .project-18 {
       flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        padding: 1rem 1rem;    
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-3 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        padding: 1rem 1rem;  
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-4 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        padding: 1rem 1rem;    
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-5 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        padding: 1rem 1rem;  
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-6 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        padding: 1rem 1rem;    
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-7 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        padding: 1rem 1rem;  
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-8 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        padding: 1rem 1rem;    
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-9 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        padding: 1rem 1rem;  
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-10 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        padding: 1rem 1rem;    
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-11 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        padding: 1rem 1rem;  
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-12 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        padding: 1rem 1rem;    
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-13 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        padding: 1rem 1rem;  
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-14 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        padding: 1rem 1rem;    
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-15 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        padding: 1rem 1rem;  
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-16 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        padding: 1rem 1rem;    
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-17 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        padding: 1rem 1rem;  
-        font-size: 15px;
-        font-weight: 500;
-      }
-    }
-
-    .project-18 {
-      flex-wrap: nowrap;
-
+      
       .project-description {
         position: relative;
         right: 50px;
@@ -929,7 +327,7 @@ footer {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .portfolios {
-    .project-1 {
+    .project-1 , .project-3, .project-5, .project-7, .project-9, .project-11, .project-13, .project-15, .project-17{
       flex-wrap: nowrap;
 
       .project-description {
@@ -941,7 +339,7 @@ footer {
       }
     }
 
-    .project-2 {
+    .project-2, .project-4, .project-6, .project-8, .project-10, .project-12, .project-14, .project-16, .project-18 {
       flex-wrap: nowrap;
 
       .project-description {
@@ -952,199 +350,6 @@ footer {
         padding: 2rem 2rem;
       }
     }
-
-    .project-3 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-4 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-5 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-6 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-7 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-8 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-9 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-10{
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-11 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-12 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-13 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-14 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-15 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-16 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-17 {
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-18{
-      flex-wrap: nowrap;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1em;
-        font-size: 17px;
-        padding: 2rem 2rem;
-      }
-    }
-
 
     img {
       height: 290px;
@@ -1155,9 +360,10 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .portfolios {
-    .project-1 {
+    .project-1 , .project-3, .project-5, .project-7, .project-9, .project-11, .project-13, .project-15, .project-17{
       flex-wrap: nowrap;
       margin-left: 16.6%;
+
       .project-description {
         h1{
           text-align: right;
@@ -1169,7 +375,7 @@ footer {
       }
     }
 
-    .project-2 {
+    .project-2, .project-4, .project-6, .project-8, .project-10, .project-12, .project-14, .project-16, .project-18 {
       flex-wrap: nowrap;
       margin-right: 16.6%;
 
@@ -1180,209 +386,15 @@ footer {
         padding: 2rem 2rem;
       }
     }
-
-    .project-3 {
-      right: 150px;
-      flex-wrap: nowrap;
-      margin-left: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-4 {
-      flex-wrap: nowrap;
-      margin-right: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-5 {
-      flex-wrap: nowrap;
-      margin-left: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-6 {
-      flex-wrap: nowrap;
-      margin-right: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-7 {
-      flex-wrap: nowrap;
-      margin-left: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-8 {
-      flex-wrap: nowrap;
-      margin-right: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-9{
-      flex-wrap: nowrap;
-      margin-left: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-10 {
-      flex-wrap: nowrap;
-      margin-right: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-11 {
-      flex-wrap: nowrap;
-      margin-left: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-12 {
-      flex-wrap: nowrap;
-      margin-right: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-13 {
-      flex-wrap: nowrap;
-      margin-left: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-14 {
-      flex-wrap: nowrap;
-      margin-right: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-15 {
-      flex-wrap: nowrap;
-      margin-left: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-16 {
-      flex-wrap: nowrap;
-      margin-right: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-17 {
-      flex-wrap: nowrap;
-      margin-left: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-18 {
-      flex-wrap: nowrap;
-      margin-right: 16.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
   }
 }
 
-/*povecati marginu i 'top'*/
 @media only screen and (min-width: 1400px) {
   .portfolios {
-    .project-1 {
+    .project-1 , .project-3, .project-5, .project-7, .project-9, .project-11, .project-13, .project-15, .project-17{
       flex-wrap: nowrap;
       margin-left: 28.6%;
+
       .project-description {
         h1{
           text-align: right;
@@ -1394,7 +406,7 @@ footer {
       }
     }
 
-    .project-2 {
+    .project-2, .project-4, .project-6, .project-8, .project-10, .project-12, .project-14, .project-16, .project-18 {
       flex-wrap: nowrap;
       margin-right: 28.6%;
 
@@ -1405,209 +417,17 @@ footer {
         padding: 2rem 2rem;
       }
     }
-
-    .project-3 {   
-      flex-wrap: nowrap;
-      margin-left: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-4 {
-      flex-wrap: nowrap;
-      margin-right: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-5 {
-      flex-wrap: nowrap;
-      margin-left: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-6 {
-      flex-wrap: nowrap;
-      margin-right: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-7 {
-      flex-wrap: nowrap;
-      margin-left: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-8 {
-      flex-wrap: nowrap;
-      margin-right: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-9{
-      flex-wrap: nowrap;
-      margin-left: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-10 {
-      flex-wrap: nowrap;
-      margin-right: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-11 {
-      flex-wrap: nowrap;
-      margin-left: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-12 {
-      flex-wrap: nowrap;
-      margin-right: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-13 {
-      flex-wrap: nowrap;
-      margin-left: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-14 {
-      flex-wrap: nowrap;
-      margin-right: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-15 {
-      flex-wrap: nowrap;
-      margin-left: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-16 {
-      flex-wrap: nowrap;
-      margin-right: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-17 {
-      flex-wrap: nowrap;
-      margin-left: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-18 {
-      flex-wrap: nowrap;
-      margin-right: 28.6%;
-
-      .project-description {
-        position: relative;
-        top: 1em;
-        font-size: 18px;
-        padding: 2rem 2rem;
-      }
-    }
-
   }
 }
+
 /* Extra large devices (large laptops and desktops, 1600px and up) */
 @media only screen and (min-width: 1600px) {
   .portfolios {
-    .project-1 {
+    .project-1 , .project-3, .project-5, .project-7, .project-9, .project-11, .project-13, .project-15, .project-17{
       flex-wrap: nowrap;
       margin-left: 28.3%;
+
       .project-description {
-        
         h1{
           text-align: right;
         }
@@ -1617,218 +437,9 @@ footer {
         font-size: 20px;
         padding: 2rem 2rem;
       }
-     
     }
 
-    .project-2 {
-      flex-wrap: nowrap;
-      margin-right: 28.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-3 {
-      flex-wrap: nowrap;
-      margin-left: 28.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-4 {
-      flex-wrap: nowrap;
-      margin-right: 28.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-5 {
-      flex-wrap: nowrap;
-      margin-left: 28.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-6 {
-      flex-wrap: nowrap;
-      margin-right: 28.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-7 {
-      flex-wrap: nowrap;
-      margin-left: 28.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-8 {
-      flex-wrap: nowrap;
-      margin-right: 28.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-9{
-      flex-wrap: nowrap;
-      margin-left: 28.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-10 {
-      flex-wrap: nowrap;
-      margin-right: 28.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-11 {
-      flex-wrap: nowrap;
-      margin-left: 28.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-12 {
-      flex-wrap: nowrap;
-      margin-right: 28.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-13 {
-      flex-wrap: nowrap;
-      margin-left: 28.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-14 {
-      flex-wrap: nowrap;
-      margin-right: 28.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-15 {
-      flex-wrap: nowrap;
-      margin-left: 28.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-16 {
-      flex-wrap: nowrap;
-      margin-right: 28.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-17 {
-      flex-wrap: nowrap;
-      margin-left: 28.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        top: 1.4em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-18 {
+    .project-2, .project-4, .project-6, .project-8, .project-10, .project-12, .project-14, .project-16, .project-18 {
       flex-wrap: nowrap;
       margin-right: 28.3%;
 
@@ -1852,9 +463,10 @@ footer {
 /* Extra large devices (large laptops and desktops, 1900px and up) */
 @media only screen and (min-width: 1900px) {
   .portfolios {
-    .project-1 {
+    .project-1 , .project-3, .project-5, .project-7, .project-9, .project-11, .project-13, .project-15, .project-17{
       flex-wrap: nowrap;
       margin-left: 33.3%;
+
       .project-description {
         
         h1{
@@ -1870,231 +482,7 @@ footer {
      
     }
 
-    .project-2 {
-      flex-wrap: nowrap;
-      margin-right: 33.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-3 {
-      flex-wrap: nowrap;
-      margin-left: 33.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;    
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-4 {
-      flex-wrap: nowrap;
-      margin-right: 33.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-5 {
-      flex-wrap: nowrap;
-      margin-left: 33.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-6 {
-      flex-wrap: nowrap;
-      margin-right: 33.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-7 {
-      flex-wrap: nowrap;
-      margin-left: 33.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-8 {
-      flex-wrap: nowrap;
-      margin-right: 33.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-9{
-      flex-wrap: nowrap;
-      margin-left: 33.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-10 {
-      flex-wrap: nowrap;
-      margin-right: 33.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-11 {
-      flex-wrap: nowrap;
-      margin-left: 33.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-12 {
-      flex-wrap: nowrap;
-      margin-right: 33.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-13 {
-      flex-wrap: nowrap;
-      margin-left: 33.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-14 {
-      flex-wrap: nowrap;
-      margin-right: 33.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-15 {
-      flex-wrap: nowrap;
-      margin-left: 33.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-16 {
-      flex-wrap: nowrap;
-      margin-right: 33.3%;
-
-      .project-description {
-        position: relative;
-        right: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-17 {
-      flex-wrap: nowrap;
-      margin-left: 33.3%;
-
-      .project-description {
-        position: relative;
-        left: 50px;
-        max-width: 400px;
-        top: 3em;
-        font-size: 20px;
-        padding: 2rem 2rem;
-      }
-    }
-
-    .project-18 {
+    .project-2, .project-4, .project-6, .project-8, .project-10, .project-12, .project-14, .project-16, .project-18 {
       flex-wrap: nowrap;
       margin-right: 33.3%;
 
@@ -2112,5 +500,104 @@ footer {
       height: 400px;
       width: 500px;
     }
+  }
+
+  div.circle{
+    position: absolute;
+    opacity: 0.6;
+    margin: -10%;
+  
+    svg{
+      height:500px;
+      width:500px;
+  
+      circle{
+        stroke:rgba(255, 57, 5, 0.25); 
+        stroke-width:30;
+        fill:transparent;
+      }
+    }
+  }
+  
+  .square{
+    z-index: -2;
+    width: 250px;
+    height: 250px;
+    border: 20px inset;
+    border-color: rgba(255, 57, 5, 0.25);
+    opacity: 0.6;
+    position: absolute;
+    right: -100px;
+  }
+  
+  .clip-wrap {
+    position: absolute;
+    opacity: 0.6;
+    left: -100px;
+    margin-top: -10%;
+  }
+  
+  .clip-each {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .clip-each:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+  }
+  
+  .clip-each, .clip-each:after {
+    -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+    clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+    clip-path: url("#octagon-clip");
+  }
+  
+  .border-style-gradient {
+    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+  }
+  
+  .border-style-gradient:after {
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+  }
+  
+  .clip-svg{
+    position: absolute;
+  }
+  
+  .plus{
+    background:  rgba(255, 57, 5, 0.25);
+    width: 250px;
+    height: 250px;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    position: absolute;
+    right: 10px;
+    opacity: 0.6;
+    left: unset;
+  }
+  
+  .star{
+    background:  rgba(255, 57, 5, 0.25);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    opacity: 0.6;  
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    left:0;
+  }
+  
+  .rhombus{
+    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);  width: 325px;
+    height: 325px;
+    position: absolute;
+    right: 0;
+    opacity: 0.3;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
 }

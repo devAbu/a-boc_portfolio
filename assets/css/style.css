@@ -37,92 +37,6 @@ body {
   color: #737373;
   margin-bottom: 20px;
 }
-div.circle {
-  position: absolute;
-  opacity: 0.6;
-  margin: -10%;
-}
-div.circle svg {
-  height: 500px;
-  width: 500px;
-}
-div.circle svg circle {
-  stroke: rgba(255, 57, 5, 0.25);
-  stroke-width: 30;
-  fill: transparent;
-}
-.square {
-  z-index: -2;
-  width: 250px;
-  height: 250px;
-  border: 20px inset;
-  border-color: rgba(255, 57, 5, 0.25);
-  opacity: 0.6;
-  position: absolute;
-  right: -100px;
-}
-.clip-wrap {
-  position: absolute;
-  opacity: 0.6;
-  left: -100px;
-  margin-top: -10%;
-}
-.clip-each {
-  width: 400px;
-  height: 400px;
-}
-.clip-each:after {
-  content: "";
-  position: absolute;
-  background: #fff;
-}
-.clip-each,
-.clip-each:after {
-  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-  clip-path: url("#octagon-clip");
-}
-.border-style-gradient {
-  background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
-  background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
-}
-.border-style-gradient:after {
-  top: 14px;
-  left: 14px;
-  right: 14px;
-  bottom: 14px;
-}
-.clip-svg {
-  position: absolute;
-}
-.plus {
-  background: rgba(255, 57, 5, 0.25);
-  width: 250px;
-  height: 250px;
-  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
-  position: absolute;
-  right: 0;
-  opacity: 0.6;
-}
-.star {
-  background: rgba(255, 57, 5, 0.25);
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  opacity: 0.6;
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  left: 0;
-}
-.rhombus {
-  background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
-  background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
-  width: 325px;
-  height: 325px;
-  position: absolute;
-  right: 0;
-  opacity: 0.3;
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
 .portfolios {
   margin: 2rem 0 0 0;
   text-align: center;
@@ -152,182 +66,62 @@ div.circle svg circle {
 .portfolios .projects {
   margin-bottom: 3rem;
 }
-.portfolios .project-1 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-1 .project-description {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-2 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-2 .project-description {
-  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-2 img {
-  margin-bottom: 1.5em;
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-3 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-3 .project-description {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-4 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-4 .project-description {
-  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-4 img {
-  margin-bottom: 1.5em;
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-5 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-5 .project-description {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-6 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-6 .project-description {
-  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-6 img {
-  margin-bottom: 1.5em;
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-7 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-7 .project-description {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-8 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-8 .project-description {
-  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-8 img {
-  margin-bottom: 1.5em;
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-9 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-9 .project-description {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-10 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-10 .project-description {
-  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-10 img {
-  margin-bottom: 1.5em;
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-11 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-11 .project-description {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-12 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-12 .project-description {
-  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-12 img {
-  margin-bottom: 1.5em;
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-13 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-13 .project-description {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-14 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-14 .project-description {
-  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-14 img {
-  margin-bottom: 1.5em;
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-15 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-15 .project-description {
-  background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-16 {
-  display: flex;
-  flex-wrap: wrap;
-}
-.portfolios .project-16 .project-description {
-  background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
-.portfolios .project-16 img {
-  margin-bottom: 1.5em;
-  box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
-}
+.portfolios .project-1,
+.portfolios .project-3,
+.portfolios .project-5,
+.portfolios .project-7,
+.portfolios .project-9,
+.portfolios .project-11,
+.portfolios .project-13,
+.portfolios .project-15,
 .portfolios .project-17 {
   display: flex;
   flex-wrap: wrap;
 }
+.portfolios .project-1 .project-description,
+.portfolios .project-3 .project-description,
+.portfolios .project-5 .project-description,
+.portfolios .project-7 .project-description,
+.portfolios .project-9 .project-description,
+.portfolios .project-11 .project-description,
+.portfolios .project-13 .project-description,
+.portfolios .project-15 .project-description,
 .portfolios .project-17 .project-description {
   background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
   box-shadow: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
 }
+.portfolios .project-2,
+.portfolios .project-4,
+.portfolios .project-6,
+.portfolios .project-8,
+.portfolios .project-10,
+.portfolios .project-12,
+.portfolios .project-14,
+.portfolios .project-16,
 .portfolios .project-18 {
   display: flex;
   flex-wrap: wrap;
 }
+.portfolios .project-2 .project-description,
+.portfolios .project-4 .project-description,
+.portfolios .project-6 .project-description,
+.portfolios .project-8 .project-description,
+.portfolios .project-10 .project-description,
+.portfolios .project-12 .project-description,
+.portfolios .project-14 .project-description,
+.portfolios .project-16 .project-description,
 .portfolios .project-18 .project-description {
   background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
   box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
 }
+.portfolios .project-2 img,
+.portfolios .project-4 img,
+.portfolios .project-6 img,
+.portfolios .project-8 img,
+.portfolios .project-10 img,
+.portfolios .project-12 img,
+.portfolios .project-14 img,
+.portfolios .project-16 img,
 .portfolios .project-18 img {
   margin-bottom: 1.5em;
   box-shadow: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
@@ -373,383 +167,201 @@ footer p {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .portfolios .project-1 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-1 .project-description {
-    position: relative;
-    left: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-2 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-2 .project-description {
-    position: relative;
-    right: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-3 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-3 .project-description {
-    position: relative;
-    left: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-4 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-4 .project-description {
-    position: relative;
-    right: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-5 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-5 .project-description {
-    position: relative;
-    left: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-6 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-6 .project-description {
-    position: relative;
-    right: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-7 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-7 .project-description {
-    position: relative;
-    left: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-8 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-8 .project-description {
-    position: relative;
-    right: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-9 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-9 .project-description {
-    position: relative;
-    left: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-10 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-10 .project-description {
-    position: relative;
-    right: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-11 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-11 .project-description {
-    position: relative;
-    left: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-12 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-12 .project-description {
-    position: relative;
-    right: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-13 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-13 .project-description {
-    position: relative;
-    left: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-14 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-14 .project-description {
-    position: relative;
-    right: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-15 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-15 .project-description {
-    position: relative;
-    left: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-16 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-16 .project-description {
-    position: relative;
-    right: 50px;
-    top: 2.5em;
-    height: 50%;
-    padding: 1rem 1rem;
-  }
+  .portfolios .project-1,
+  .portfolios .project-3,
+  .portfolios .project-5,
+  .portfolios .project-7,
+  .portfolios .project-9,
+  .portfolios .project-11,
+  .portfolios .project-13,
+  .portfolios .project-15,
   .portfolios .project-17 {
     flex-wrap: nowrap;
   }
+  .portfolios .project-1 .project-description,
+  .portfolios .project-3 .project-description,
+  .portfolios .project-5 .project-description,
+  .portfolios .project-7 .project-description,
+  .portfolios .project-9 .project-description,
+  .portfolios .project-11 .project-description,
+  .portfolios .project-13 .project-description,
+  .portfolios .project-15 .project-description,
   .portfolios .project-17 .project-description {
     position: relative;
     left: 50px;
-    top: 2.5em;
+    top: 1.2em;
     height: 50%;
     padding: 1rem 1rem;
+    font-size: small;
   }
+  .portfolios .project-2,
+  .portfolios .project-4,
+  .portfolios .project-6,
+  .portfolios .project-8,
+  .portfolios .project-10,
+  .portfolios .project-12,
+  .portfolios .project-14,
+  .portfolios .project-16,
   .portfolios .project-18 {
     flex-wrap: nowrap;
   }
+  .portfolios .project-2 .project-description,
+  .portfolios .project-4 .project-description,
+  .portfolios .project-6 .project-description,
+  .portfolios .project-8 .project-description,
+  .portfolios .project-10 .project-description,
+  .portfolios .project-12 .project-description,
+  .portfolios .project-14 .project-description,
+  .portfolios .project-16 .project-description,
   .portfolios .project-18 .project-description {
     position: relative;
     right: 50px;
-    top: 2.5em;
+    top: 1.2em;
     height: 50%;
     padding: 1rem 1rem;
+    font-size: small;
   }
   .portfolios img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
+  }
+  div.circle {
+    position: absolute;
+    opacity: 0.6;
+    margin: -10%;
+  }
+  div.circle svg {
+    height: 500px;
+    width: 500px;
+  }
+  div.circle svg circle {
+    stroke: rgba(255, 57, 5, 0.25);
+    stroke-width: 30;
+    fill: transparent;
+  }
+  .square {
+    z-index: -2;
+    width: 150px;
+    height: 150px;
+    border: 20px inset;
+    border-color: rgba(255, 57, 5, 0.25);
+    opacity: 0.6;
+    position: absolute;
+    right: -100px;
+  }
+  .clip-wrap {
+    position: absolute;
+    opacity: 0.6;
+    left: -100px;
+    margin-top: -15%;
+  }
+  .clip-each {
+    width: 250px;
+    height: 250px;
+  }
+  .clip-each:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+  }
+  .clip-each,
+  .clip-each:after {
+    -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+    clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+    clip-path: url("#octagon-clip");
+  }
+  .border-style-gradient {
+    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+  }
+  .border-style-gradient:after {
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+  }
+  .clip-svg {
+    position: absolute;
+  }
+  .plus {
+    background: rgba(255, 57, 5, 0.25);
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    position: absolute;
+    opacity: 0.6;
+    left: 0;
+  }
+  .star {
+    background: rgba(255, 57, 5, 0.25);
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    opacity: 0.6;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    left: unset;
+    right: 0;
+    margin-top: 50px;
+  }
+  .rhombus {
+    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    right: 0;
+    opacity: 0.3;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
 }
 /* Medium devices (landscape tablets, 769px and up) */
 @media only screen and (min-width: 769px) {
-  .portfolios .project-1 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-1 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 1rem 1rem;
-  }
-  .portfolios .project-2 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-2 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-3 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-3 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-4 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-4 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-5 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-5 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-6 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-6 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-7 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-7 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-8 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-8 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-9 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-9 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-10 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-10 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-11 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-11 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-12 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-12 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-13 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-13 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-14 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-14 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-15 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-15 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .portfolios .project-16 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-16 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    padding: 1rem 1rem;
-    font-size: 15px;
-    font-weight: 500;
-  }
+  .portfolios .project-1,
+  .portfolios .project-3,
+  .portfolios .project-5,
+  .portfolios .project-7,
+  .portfolios .project-9,
+  .portfolios .project-11,
+  .portfolios .project-13,
+  .portfolios .project-15,
   .portfolios .project-17 {
     flex-wrap: nowrap;
   }
+  .portfolios .project-1 .project-description,
+  .portfolios .project-3 .project-description,
+  .portfolios .project-5 .project-description,
+  .portfolios .project-7 .project-description,
+  .portfolios .project-9 .project-description,
+  .portfolios .project-11 .project-description,
+  .portfolios .project-13 .project-description,
+  .portfolios .project-15 .project-description,
   .portfolios .project-17 .project-description {
     position: relative;
     left: 50px;
     top: 1em;
-    padding: 1rem 1rem;
     font-size: 15px;
     font-weight: 500;
+    padding: 1rem 1rem;
   }
+  .portfolios .project-2,
+  .portfolios .project-4,
+  .portfolios .project-6,
+  .portfolios .project-8,
+  .portfolios .project-10,
+  .portfolios .project-12,
+  .portfolios .project-14,
+  .portfolios .project-16,
   .portfolios .project-18 {
     flex-wrap: nowrap;
   }
+  .portfolios .project-2 .project-description,
+  .portfolios .project-4 .project-description,
+  .portfolios .project-6 .project-description,
+  .portfolios .project-8 .project-description,
+  .portfolios .project-10 .project-description,
+  .portfolios .project-12 .project-description,
+  .portfolios .project-14 .project-description,
+  .portfolios .project-16 .project-description,
   .portfolios .project-18 .project-description {
     position: relative;
     right: 50px;
@@ -765,169 +377,25 @@ footer p {
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .portfolios .project-1 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-1 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-2 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-2 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-3 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-3 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-4 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-4 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-5 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-5 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-6 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-6 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-7 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-7 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-8 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-8 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-9 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-9 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-10 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-10 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-11 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-11 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-12 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-12 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-13 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-13 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-14 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-14 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-15 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-15 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-16 {
-    flex-wrap: nowrap;
-  }
-  .portfolios .project-16 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1em;
-    font-size: 17px;
-    padding: 2rem 2rem;
-  }
+  .portfolios .project-1,
+  .portfolios .project-3,
+  .portfolios .project-5,
+  .portfolios .project-7,
+  .portfolios .project-9,
+  .portfolios .project-11,
+  .portfolios .project-13,
+  .portfolios .project-15,
   .portfolios .project-17 {
     flex-wrap: nowrap;
   }
+  .portfolios .project-1 .project-description,
+  .portfolios .project-3 .project-description,
+  .portfolios .project-5 .project-description,
+  .portfolios .project-7 .project-description,
+  .portfolios .project-9 .project-description,
+  .portfolios .project-11 .project-description,
+  .portfolios .project-13 .project-description,
+  .portfolios .project-15 .project-description,
   .portfolios .project-17 .project-description {
     position: relative;
     left: 50px;
@@ -935,9 +403,25 @@ footer p {
     font-size: 17px;
     padding: 2rem 2rem;
   }
+  .portfolios .project-2,
+  .portfolios .project-4,
+  .portfolios .project-6,
+  .portfolios .project-8,
+  .portfolios .project-10,
+  .portfolios .project-12,
+  .portfolios .project-14,
+  .portfolios .project-16,
   .portfolios .project-18 {
     flex-wrap: nowrap;
   }
+  .portfolios .project-2 .project-description,
+  .portfolios .project-4 .project-description,
+  .portfolios .project-6 .project-description,
+  .portfolios .project-8 .project-description,
+  .portfolios .project-10 .project-description,
+  .portfolios .project-12 .project-description,
+  .portfolios .project-14 .project-description,
+  .portfolios .project-16 .project-description,
   .portfolios .project-18 .project-description {
     position: relative;
     right: 50px;
@@ -951,184 +435,63 @@ footer p {
   }
 }
 @media only screen and (min-width: 1200px) {
-  .portfolios .project-1 {
-    flex-wrap: nowrap;
-    margin-left: 16.6%;
-  }
-  .portfolios .project-1 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-1 .project-description h1 {
-    text-align: right;
-  }
-  .portfolios .project-2 {
-    flex-wrap: nowrap;
-    margin-right: 16.6%;
-  }
-  .portfolios .project-2 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-3 {
-    right: 150px;
-    flex-wrap: nowrap;
-    margin-left: 16.6%;
-  }
-  .portfolios .project-3 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-4 {
-    flex-wrap: nowrap;
-    margin-right: 16.6%;
-  }
-  .portfolios .project-4 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-5 {
-    flex-wrap: nowrap;
-    margin-left: 16.6%;
-  }
-  .portfolios .project-5 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-6 {
-    flex-wrap: nowrap;
-    margin-right: 16.6%;
-  }
-  .portfolios .project-6 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-7 {
-    flex-wrap: nowrap;
-    margin-left: 16.6%;
-  }
-  .portfolios .project-7 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-8 {
-    flex-wrap: nowrap;
-    margin-right: 16.6%;
-  }
-  .portfolios .project-8 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-9 {
-    flex-wrap: nowrap;
-    margin-left: 16.6%;
-  }
-  .portfolios .project-9 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-10 {
-    flex-wrap: nowrap;
-    margin-right: 16.6%;
-  }
-  .portfolios .project-10 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-11 {
-    flex-wrap: nowrap;
-    margin-left: 16.6%;
-  }
-  .portfolios .project-11 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-12 {
-    flex-wrap: nowrap;
-    margin-right: 16.6%;
-  }
-  .portfolios .project-12 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-13 {
-    flex-wrap: nowrap;
-    margin-left: 16.6%;
-  }
-  .portfolios .project-13 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-14 {
-    flex-wrap: nowrap;
-    margin-right: 16.6%;
-  }
-  .portfolios .project-14 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-15 {
-    flex-wrap: nowrap;
-    margin-left: 16.6%;
-  }
-  .portfolios .project-15 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-16 {
-    flex-wrap: nowrap;
-    margin-right: 16.6%;
-  }
-  .portfolios .project-16 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
+  .portfolios .project-1,
+  .portfolios .project-3,
+  .portfolios .project-5,
+  .portfolios .project-7,
+  .portfolios .project-9,
+  .portfolios .project-11,
+  .portfolios .project-13,
+  .portfolios .project-15,
   .portfolios .project-17 {
     flex-wrap: nowrap;
     margin-left: 16.6%;
   }
+  .portfolios .project-1 .project-description,
+  .portfolios .project-3 .project-description,
+  .portfolios .project-5 .project-description,
+  .portfolios .project-7 .project-description,
+  .portfolios .project-9 .project-description,
+  .portfolios .project-11 .project-description,
+  .portfolios .project-13 .project-description,
+  .portfolios .project-15 .project-description,
   .portfolios .project-17 .project-description {
     position: relative;
     top: 1em;
     font-size: 18px;
     padding: 2rem 2rem;
   }
+  .portfolios .project-1 .project-description h1,
+  .portfolios .project-3 .project-description h1,
+  .portfolios .project-5 .project-description h1,
+  .portfolios .project-7 .project-description h1,
+  .portfolios .project-9 .project-description h1,
+  .portfolios .project-11 .project-description h1,
+  .portfolios .project-13 .project-description h1,
+  .portfolios .project-15 .project-description h1,
+  .portfolios .project-17 .project-description h1 {
+    text-align: right;
+  }
+  .portfolios .project-2,
+  .portfolios .project-4,
+  .portfolios .project-6,
+  .portfolios .project-8,
+  .portfolios .project-10,
+  .portfolios .project-12,
+  .portfolios .project-14,
+  .portfolios .project-16,
   .portfolios .project-18 {
     flex-wrap: nowrap;
     margin-right: 16.6%;
   }
+  .portfolios .project-2 .project-description,
+  .portfolios .project-4 .project-description,
+  .portfolios .project-6 .project-description,
+  .portfolios .project-8 .project-description,
+  .portfolios .project-10 .project-description,
+  .portfolios .project-12 .project-description,
+  .portfolios .project-14 .project-description,
+  .portfolios .project-16 .project-description,
   .portfolios .project-18 .project-description {
     position: relative;
     top: 1em;
@@ -1136,185 +499,64 @@ footer p {
     padding: 2rem 2rem;
   }
 }
-/*povecati marginu i 'top'*/
 @media only screen and (min-width: 1400px) {
-  .portfolios .project-1 {
-    flex-wrap: nowrap;
-    margin-left: 28.6%;
-  }
-  .portfolios .project-1 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-1 .project-description h1 {
-    text-align: right;
-  }
-  .portfolios .project-2 {
-    flex-wrap: nowrap;
-    margin-right: 28.6%;
-  }
-  .portfolios .project-2 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-3 {
-    flex-wrap: nowrap;
-    margin-left: 28.6%;
-  }
-  .portfolios .project-3 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-4 {
-    flex-wrap: nowrap;
-    margin-right: 28.6%;
-  }
-  .portfolios .project-4 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-5 {
-    flex-wrap: nowrap;
-    margin-left: 28.6%;
-  }
-  .portfolios .project-5 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-6 {
-    flex-wrap: nowrap;
-    margin-right: 28.6%;
-  }
-  .portfolios .project-6 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-7 {
-    flex-wrap: nowrap;
-    margin-left: 28.6%;
-  }
-  .portfolios .project-7 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-8 {
-    flex-wrap: nowrap;
-    margin-right: 28.6%;
-  }
-  .portfolios .project-8 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-9 {
-    flex-wrap: nowrap;
-    margin-left: 28.6%;
-  }
-  .portfolios .project-9 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-10 {
-    flex-wrap: nowrap;
-    margin-right: 28.6%;
-  }
-  .portfolios .project-10 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-11 {
-    flex-wrap: nowrap;
-    margin-left: 28.6%;
-  }
-  .portfolios .project-11 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-12 {
-    flex-wrap: nowrap;
-    margin-right: 28.6%;
-  }
-  .portfolios .project-12 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-13 {
-    flex-wrap: nowrap;
-    margin-left: 28.6%;
-  }
-  .portfolios .project-13 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-14 {
-    flex-wrap: nowrap;
-    margin-right: 28.6%;
-  }
-  .portfolios .project-14 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-15 {
-    flex-wrap: nowrap;
-    margin-left: 28.6%;
-  }
-  .portfolios .project-15 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-16 {
-    flex-wrap: nowrap;
-    margin-right: 28.6%;
-  }
-  .portfolios .project-16 .project-description {
-    position: relative;
-    top: 1em;
-    font-size: 18px;
-    padding: 2rem 2rem;
-  }
+  .portfolios .project-1,
+  .portfolios .project-3,
+  .portfolios .project-5,
+  .portfolios .project-7,
+  .portfolios .project-9,
+  .portfolios .project-11,
+  .portfolios .project-13,
+  .portfolios .project-15,
   .portfolios .project-17 {
     flex-wrap: nowrap;
     margin-left: 28.6%;
   }
+  .portfolios .project-1 .project-description,
+  .portfolios .project-3 .project-description,
+  .portfolios .project-5 .project-description,
+  .portfolios .project-7 .project-description,
+  .portfolios .project-9 .project-description,
+  .portfolios .project-11 .project-description,
+  .portfolios .project-13 .project-description,
+  .portfolios .project-15 .project-description,
   .portfolios .project-17 .project-description {
     position: relative;
     top: 1em;
     font-size: 18px;
     padding: 2rem 2rem;
   }
+  .portfolios .project-1 .project-description h1,
+  .portfolios .project-3 .project-description h1,
+  .portfolios .project-5 .project-description h1,
+  .portfolios .project-7 .project-description h1,
+  .portfolios .project-9 .project-description h1,
+  .portfolios .project-11 .project-description h1,
+  .portfolios .project-13 .project-description h1,
+  .portfolios .project-15 .project-description h1,
+  .portfolios .project-17 .project-description h1 {
+    text-align: right;
+  }
+  .portfolios .project-2,
+  .portfolios .project-4,
+  .portfolios .project-6,
+  .portfolios .project-8,
+  .portfolios .project-10,
+  .portfolios .project-12,
+  .portfolios .project-14,
+  .portfolios .project-16,
   .portfolios .project-18 {
     flex-wrap: nowrap;
     margin-right: 28.6%;
   }
+  .portfolios .project-2 .project-description,
+  .portfolios .project-4 .project-description,
+  .portfolios .project-6 .project-description,
+  .portfolios .project-8 .project-description,
+  .portfolios .project-10 .project-description,
+  .portfolios .project-12 .project-description,
+  .portfolios .project-14 .project-description,
+  .portfolios .project-16 .project-description,
   .portfolios .project-18 .project-description {
     position: relative;
     top: 1em;
@@ -1324,189 +566,26 @@ footer p {
 }
 /* Extra large devices (large laptops and desktops, 1600px and up) */
 @media only screen and (min-width: 1600px) {
-  .portfolios .project-1 {
-    flex-wrap: nowrap;
-    margin-left: 28.3%;
-  }
-  .portfolios .project-1 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-1 .project-description h1 {
-    text-align: right;
-  }
-  .portfolios .project-2 {
-    flex-wrap: nowrap;
-    margin-right: 28.3%;
-  }
-  .portfolios .project-2 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-3 {
-    flex-wrap: nowrap;
-    margin-left: 28.3%;
-  }
-  .portfolios .project-3 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-4 {
-    flex-wrap: nowrap;
-    margin-right: 28.3%;
-  }
-  .portfolios .project-4 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-5 {
-    flex-wrap: nowrap;
-    margin-left: 28.3%;
-  }
-  .portfolios .project-5 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-6 {
-    flex-wrap: nowrap;
-    margin-right: 28.3%;
-  }
-  .portfolios .project-6 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-7 {
-    flex-wrap: nowrap;
-    margin-left: 28.3%;
-  }
-  .portfolios .project-7 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-8 {
-    flex-wrap: nowrap;
-    margin-right: 28.3%;
-  }
-  .portfolios .project-8 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-9 {
-    flex-wrap: nowrap;
-    margin-left: 28.3%;
-  }
-  .portfolios .project-9 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-10 {
-    flex-wrap: nowrap;
-    margin-right: 28.3%;
-  }
-  .portfolios .project-10 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-11 {
-    flex-wrap: nowrap;
-    margin-left: 28.3%;
-  }
-  .portfolios .project-11 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-12 {
-    flex-wrap: nowrap;
-    margin-right: 28.3%;
-  }
-  .portfolios .project-12 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-13 {
-    flex-wrap: nowrap;
-    margin-left: 28.3%;
-  }
-  .portfolios .project-13 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-14 {
-    flex-wrap: nowrap;
-    margin-right: 28.3%;
-  }
-  .portfolios .project-14 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-15 {
-    flex-wrap: nowrap;
-    margin-left: 28.3%;
-  }
-  .portfolios .project-15 .project-description {
-    position: relative;
-    left: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-16 {
-    flex-wrap: nowrap;
-    margin-right: 28.3%;
-  }
-  .portfolios .project-16 .project-description {
-    position: relative;
-    right: 50px;
-    top: 1.4em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
+  .portfolios .project-1,
+  .portfolios .project-3,
+  .portfolios .project-5,
+  .portfolios .project-7,
+  .portfolios .project-9,
+  .portfolios .project-11,
+  .portfolios .project-13,
+  .portfolios .project-15,
   .portfolios .project-17 {
     flex-wrap: nowrap;
     margin-left: 28.3%;
   }
+  .portfolios .project-1 .project-description,
+  .portfolios .project-3 .project-description,
+  .portfolios .project-5 .project-description,
+  .portfolios .project-7 .project-description,
+  .portfolios .project-9 .project-description,
+  .portfolios .project-11 .project-description,
+  .portfolios .project-13 .project-description,
+  .portfolios .project-15 .project-description,
   .portfolios .project-17 .project-description {
     position: relative;
     left: 50px;
@@ -1514,10 +593,37 @@ footer p {
     font-size: 20px;
     padding: 2rem 2rem;
   }
+  .portfolios .project-1 .project-description h1,
+  .portfolios .project-3 .project-description h1,
+  .portfolios .project-5 .project-description h1,
+  .portfolios .project-7 .project-description h1,
+  .portfolios .project-9 .project-description h1,
+  .portfolios .project-11 .project-description h1,
+  .portfolios .project-13 .project-description h1,
+  .portfolios .project-15 .project-description h1,
+  .portfolios .project-17 .project-description h1 {
+    text-align: right;
+  }
+  .portfolios .project-2,
+  .portfolios .project-4,
+  .portfolios .project-6,
+  .portfolios .project-8,
+  .portfolios .project-10,
+  .portfolios .project-12,
+  .portfolios .project-14,
+  .portfolios .project-16,
   .portfolios .project-18 {
     flex-wrap: nowrap;
     margin-right: 28.3%;
   }
+  .portfolios .project-2 .project-description,
+  .portfolios .project-4 .project-description,
+  .portfolios .project-6 .project-description,
+  .portfolios .project-8 .project-description,
+  .portfolios .project-10 .project-description,
+  .portfolios .project-12 .project-description,
+  .portfolios .project-14 .project-description,
+  .portfolios .project-16 .project-description,
   .portfolios .project-18 .project-description {
     position: relative;
     right: 50px;
@@ -1532,205 +638,26 @@ footer p {
 }
 /* Extra large devices (large laptops and desktops, 1900px and up) */
 @media only screen and (min-width: 1900px) {
-  .portfolios .project-1 {
-    flex-wrap: nowrap;
-    margin-left: 33.3%;
-  }
-  .portfolios .project-1 .project-description {
-    position: relative;
-    left: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-1 .project-description h1 {
-    text-align: right;
-  }
-  .portfolios .project-2 {
-    flex-wrap: nowrap;
-    margin-right: 33.3%;
-  }
-  .portfolios .project-2 .project-description {
-    position: relative;
-    right: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-3 {
-    flex-wrap: nowrap;
-    margin-left: 33.3%;
-  }
-  .portfolios .project-3 .project-description {
-    position: relative;
-    left: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-4 {
-    flex-wrap: nowrap;
-    margin-right: 33.3%;
-  }
-  .portfolios .project-4 .project-description {
-    position: relative;
-    right: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-5 {
-    flex-wrap: nowrap;
-    margin-left: 33.3%;
-  }
-  .portfolios .project-5 .project-description {
-    position: relative;
-    left: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-6 {
-    flex-wrap: nowrap;
-    margin-right: 33.3%;
-  }
-  .portfolios .project-6 .project-description {
-    position: relative;
-    right: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-7 {
-    flex-wrap: nowrap;
-    margin-left: 33.3%;
-  }
-  .portfolios .project-7 .project-description {
-    position: relative;
-    left: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-8 {
-    flex-wrap: nowrap;
-    margin-right: 33.3%;
-  }
-  .portfolios .project-8 .project-description {
-    position: relative;
-    right: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-9 {
-    flex-wrap: nowrap;
-    margin-left: 33.3%;
-  }
-  .portfolios .project-9 .project-description {
-    position: relative;
-    left: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-10 {
-    flex-wrap: nowrap;
-    margin-right: 33.3%;
-  }
-  .portfolios .project-10 .project-description {
-    position: relative;
-    right: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-11 {
-    flex-wrap: nowrap;
-    margin-left: 33.3%;
-  }
-  .portfolios .project-11 .project-description {
-    position: relative;
-    left: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-12 {
-    flex-wrap: nowrap;
-    margin-right: 33.3%;
-  }
-  .portfolios .project-12 .project-description {
-    position: relative;
-    right: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-13 {
-    flex-wrap: nowrap;
-    margin-left: 33.3%;
-  }
-  .portfolios .project-13 .project-description {
-    position: relative;
-    left: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-14 {
-    flex-wrap: nowrap;
-    margin-right: 33.3%;
-  }
-  .portfolios .project-14 .project-description {
-    position: relative;
-    right: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-15 {
-    flex-wrap: nowrap;
-    margin-left: 33.3%;
-  }
-  .portfolios .project-15 .project-description {
-    position: relative;
-    left: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
-  .portfolios .project-16 {
-    flex-wrap: nowrap;
-    margin-right: 33.3%;
-  }
-  .portfolios .project-16 .project-description {
-    position: relative;
-    right: 50px;
-    max-width: 400px;
-    top: 3em;
-    font-size: 20px;
-    padding: 2rem 2rem;
-  }
+  .portfolios .project-1,
+  .portfolios .project-3,
+  .portfolios .project-5,
+  .portfolios .project-7,
+  .portfolios .project-9,
+  .portfolios .project-11,
+  .portfolios .project-13,
+  .portfolios .project-15,
   .portfolios .project-17 {
     flex-wrap: nowrap;
     margin-left: 33.3%;
   }
+  .portfolios .project-1 .project-description,
+  .portfolios .project-3 .project-description,
+  .portfolios .project-5 .project-description,
+  .portfolios .project-7 .project-description,
+  .portfolios .project-9 .project-description,
+  .portfolios .project-11 .project-description,
+  .portfolios .project-13 .project-description,
+  .portfolios .project-15 .project-description,
   .portfolios .project-17 .project-description {
     position: relative;
     left: 50px;
@@ -1739,10 +666,37 @@ footer p {
     font-size: 20px;
     padding: 2rem 2rem;
   }
+  .portfolios .project-1 .project-description h1,
+  .portfolios .project-3 .project-description h1,
+  .portfolios .project-5 .project-description h1,
+  .portfolios .project-7 .project-description h1,
+  .portfolios .project-9 .project-description h1,
+  .portfolios .project-11 .project-description h1,
+  .portfolios .project-13 .project-description h1,
+  .portfolios .project-15 .project-description h1,
+  .portfolios .project-17 .project-description h1 {
+    text-align: right;
+  }
+  .portfolios .project-2,
+  .portfolios .project-4,
+  .portfolios .project-6,
+  .portfolios .project-8,
+  .portfolios .project-10,
+  .portfolios .project-12,
+  .portfolios .project-14,
+  .portfolios .project-16,
   .portfolios .project-18 {
     flex-wrap: nowrap;
     margin-right: 33.3%;
   }
+  .portfolios .project-2 .project-description,
+  .portfolios .project-4 .project-description,
+  .portfolios .project-6 .project-description,
+  .portfolios .project-8 .project-description,
+  .portfolios .project-10 .project-description,
+  .portfolios .project-12 .project-description,
+  .portfolios .project-14 .project-description,
+  .portfolios .project-16 .project-description,
   .portfolios .project-18 .project-description {
     position: relative;
     right: 50px;
@@ -1754,5 +708,92 @@ footer p {
   .portfolios img {
     height: 400px;
     width: 500px;
+  }
+  div.circle {
+    position: absolute;
+    opacity: 0.6;
+    margin: -10%;
+  }
+  div.circle svg {
+    height: 500px;
+    width: 500px;
+  }
+  div.circle svg circle {
+    stroke: rgba(255, 57, 5, 0.25);
+    stroke-width: 30;
+    fill: transparent;
+  }
+  .square {
+    z-index: -2;
+    width: 250px;
+    height: 250px;
+    border: 20px inset;
+    border-color: rgba(255, 57, 5, 0.25);
+    opacity: 0.6;
+    position: absolute;
+    right: -100px;
+  }
+  .clip-wrap {
+    position: absolute;
+    opacity: 0.6;
+    left: -100px;
+    margin-top: -10%;
+  }
+  .clip-each {
+    width: 400px;
+    height: 400px;
+  }
+  .clip-each:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+  }
+  .clip-each,
+  .clip-each:after {
+    -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+    clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+    clip-path: url("#octagon-clip");
+  }
+  .border-style-gradient {
+    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+  }
+  .border-style-gradient:after {
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+  }
+  .clip-svg {
+    position: absolute;
+  }
+  .plus {
+    background: rgba(255, 57, 5, 0.25);
+    width: 250px;
+    height: 250px;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    position: absolute;
+    right: 10px;
+    opacity: 0.6;
+    left: unset;
+  }
+  .star {
+    background: rgba(255, 57, 5, 0.25);
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    opacity: 0.6;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    left: 0;
+  }
+  .rhombus {
+    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    width: 325px;
+    height: 325px;
+    position: absolute;
+    right: 0;
+    opacity: 0.3;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   }
 }
