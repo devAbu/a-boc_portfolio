@@ -37,6 +37,31 @@ body {
   color: #737373;
   margin-bottom: 20px;
 }
+div.circle {
+  position: absolute;
+  opacity: 0.6;
+  margin: -10%;
+}
+div.circle svg {
+  height: 500px;
+  width: 500px;
+}
+div.circle svg circle {
+  stroke: rgba(255, 57, 5, 0.25);
+  stroke-width: 30;
+  fill: transparent;
+}
+.square {
+  z-index: -2;
+  width: 250px;
+  height: 250px;
+  border: 20px inset;
+  border-color: rgba(255, 57, 5, 0.25);
+  opacity: 0.6;
+  position: absolute;
+  right: -100px;
+  float: right;
+}
 .portfolios {
   margin: 2rem 0 0 0;
   text-align: center;
@@ -864,24 +889,588 @@ footer p {
     width: 370px;
   }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .circle {
-    position: absolute;
-    opacity: 0.4;
-    margin: -10%;
+  .portfolios .project-1 {
+    flex-wrap: nowrap;
+    margin-left: 16.6%;
   }
-  .square {
-    z-index: -2;
-    width: 250px;
-    height: 250px;
-    border: 20px inset;
-    border-color: rgba(255, 57, 5, 0.25);
-    opacity: 0.4;
-    position: absolute;
-    right: -100px;
-    float: right;
+  .portfolios .project-1 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
   }
+  .portfolios .project-1 .project-description h1 {
+    text-align: right;
+  }
+  .portfolios .project-2 {
+    flex-wrap: nowrap;
+    margin-right: 16.6%;
+  }
+  .portfolios .project-2 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-3 {
+    right: 150px;
+    flex-wrap: nowrap;
+    margin-left: 16.6%;
+  }
+  .portfolios .project-3 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-4 {
+    flex-wrap: nowrap;
+    margin-right: 16.6%;
+  }
+  .portfolios .project-4 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-5 {
+    flex-wrap: nowrap;
+    margin-left: 16.6%;
+  }
+  .portfolios .project-5 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-6 {
+    flex-wrap: nowrap;
+    margin-right: 16.6%;
+  }
+  .portfolios .project-6 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-7 {
+    flex-wrap: nowrap;
+    margin-left: 16.6%;
+  }
+  .portfolios .project-7 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-8 {
+    flex-wrap: nowrap;
+    margin-right: 16.6%;
+  }
+  .portfolios .project-8 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-9 {
+    flex-wrap: nowrap;
+    margin-left: 16.6%;
+  }
+  .portfolios .project-9 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-10 {
+    flex-wrap: nowrap;
+    margin-right: 16.6%;
+  }
+  .portfolios .project-10 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-11 {
+    flex-wrap: nowrap;
+    margin-left: 16.6%;
+  }
+  .portfolios .project-11 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-12 {
+    flex-wrap: nowrap;
+    margin-right: 16.6%;
+  }
+  .portfolios .project-12 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-13 {
+    flex-wrap: nowrap;
+    margin-left: 16.6%;
+  }
+  .portfolios .project-13 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-14 {
+    flex-wrap: nowrap;
+    margin-right: 16.6%;
+  }
+  .portfolios .project-14 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-15 {
+    flex-wrap: nowrap;
+    margin-left: 16.6%;
+  }
+  .portfolios .project-15 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-16 {
+    flex-wrap: nowrap;
+    margin-right: 16.6%;
+  }
+  .portfolios .project-16 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-17 {
+    flex-wrap: nowrap;
+    margin-left: 16.6%;
+  }
+  .portfolios .project-17 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-18 {
+    flex-wrap: nowrap;
+    margin-right: 16.6%;
+  }
+  .portfolios .project-18 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+}
+/*povecati marginu i 'top'*/
+@media only screen and (min-width: 1400px) {
+  .portfolios .project-1 {
+    flex-wrap: nowrap;
+    margin-left: 28.6%;
+  }
+  .portfolios .project-1 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-1 .project-description h1 {
+    text-align: right;
+  }
+  .portfolios .project-2 {
+    flex-wrap: nowrap;
+    margin-right: 28.6%;
+  }
+  .portfolios .project-2 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-3 {
+    flex-wrap: nowrap;
+    margin-left: 28.6%;
+  }
+  .portfolios .project-3 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-4 {
+    flex-wrap: nowrap;
+    margin-right: 28.6%;
+  }
+  .portfolios .project-4 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-5 {
+    flex-wrap: nowrap;
+    margin-left: 28.6%;
+  }
+  .portfolios .project-5 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-6 {
+    flex-wrap: nowrap;
+    margin-right: 28.6%;
+  }
+  .portfolios .project-6 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-7 {
+    flex-wrap: nowrap;
+    margin-left: 28.6%;
+  }
+  .portfolios .project-7 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-8 {
+    flex-wrap: nowrap;
+    margin-right: 28.6%;
+  }
+  .portfolios .project-8 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-9 {
+    flex-wrap: nowrap;
+    margin-left: 28.6%;
+  }
+  .portfolios .project-9 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-10 {
+    flex-wrap: nowrap;
+    margin-right: 28.6%;
+  }
+  .portfolios .project-10 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-11 {
+    flex-wrap: nowrap;
+    margin-left: 28.6%;
+  }
+  .portfolios .project-11 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-12 {
+    flex-wrap: nowrap;
+    margin-right: 28.6%;
+  }
+  .portfolios .project-12 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-13 {
+    flex-wrap: nowrap;
+    margin-left: 28.6%;
+  }
+  .portfolios .project-13 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-14 {
+    flex-wrap: nowrap;
+    margin-right: 28.6%;
+  }
+  .portfolios .project-14 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-15 {
+    flex-wrap: nowrap;
+    margin-left: 28.6%;
+  }
+  .portfolios .project-15 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-16 {
+    flex-wrap: nowrap;
+    margin-right: 28.6%;
+  }
+  .portfolios .project-16 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-17 {
+    flex-wrap: nowrap;
+    margin-left: 28.6%;
+  }
+  .portfolios .project-17 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-18 {
+    flex-wrap: nowrap;
+    margin-right: 28.6%;
+  }
+  .portfolios .project-18 .project-description {
+    position: relative;
+    top: 1em;
+    font-size: 18px;
+    padding: 2rem 2rem;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (min-width: 1600px) {
+  .portfolios .project-1 {
+    flex-wrap: nowrap;
+    margin-left: 28.3%;
+  }
+  .portfolios .project-1 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-1 .project-description h1 {
+    text-align: right;
+  }
+  .portfolios .project-2 {
+    flex-wrap: nowrap;
+    margin-right: 28.3%;
+  }
+  .portfolios .project-2 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-3 {
+    flex-wrap: nowrap;
+    margin-left: 28.3%;
+  }
+  .portfolios .project-3 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-4 {
+    flex-wrap: nowrap;
+    margin-right: 28.3%;
+  }
+  .portfolios .project-4 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-5 {
+    flex-wrap: nowrap;
+    margin-left: 28.3%;
+  }
+  .portfolios .project-5 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-6 {
+    flex-wrap: nowrap;
+    margin-right: 28.3%;
+  }
+  .portfolios .project-6 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-7 {
+    flex-wrap: nowrap;
+    margin-left: 28.3%;
+  }
+  .portfolios .project-7 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-8 {
+    flex-wrap: nowrap;
+    margin-right: 28.3%;
+  }
+  .portfolios .project-8 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-9 {
+    flex-wrap: nowrap;
+    margin-left: 28.3%;
+  }
+  .portfolios .project-9 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-10 {
+    flex-wrap: nowrap;
+    margin-right: 28.3%;
+  }
+  .portfolios .project-10 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-11 {
+    flex-wrap: nowrap;
+    margin-left: 28.3%;
+  }
+  .portfolios .project-11 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-12 {
+    flex-wrap: nowrap;
+    margin-right: 28.3%;
+  }
+  .portfolios .project-12 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-13 {
+    flex-wrap: nowrap;
+    margin-left: 28.3%;
+  }
+  .portfolios .project-13 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-14 {
+    flex-wrap: nowrap;
+    margin-right: 28.3%;
+  }
+  .portfolios .project-14 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-15 {
+    flex-wrap: nowrap;
+    margin-left: 28.3%;
+  }
+  .portfolios .project-15 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-16 {
+    flex-wrap: nowrap;
+    margin-right: 28.3%;
+  }
+  .portfolios .project-16 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-17 {
+    flex-wrap: nowrap;
+    margin-left: 28.3%;
+  }
+  .portfolios .project-17 .project-description {
+    position: relative;
+    left: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios .project-18 {
+    flex-wrap: nowrap;
+    margin-right: 28.3%;
+  }
+  .portfolios .project-18 .project-description {
+    position: relative;
+    right: 50px;
+    top: 1.4em;
+    font-size: 20px;
+    padding: 2rem 2rem;
+  }
+  .portfolios img {
+    height: 320px;
+    width: 420px;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1900px and up) */
+@media only screen and (min-width: 1900px) {
   .portfolios .project-1 {
     flex-wrap: nowrap;
     margin-left: 33.3%;
@@ -890,7 +1479,7 @@ footer p {
     position: relative;
     left: 50px;
     max-width: 400px;
-    top: 4em;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -904,7 +1493,8 @@ footer p {
   .portfolios .project-2 .project-description {
     position: relative;
     right: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -915,7 +1505,8 @@ footer p {
   .portfolios .project-3 .project-description {
     position: relative;
     left: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -926,7 +1517,8 @@ footer p {
   .portfolios .project-4 .project-description {
     position: relative;
     right: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -937,7 +1529,8 @@ footer p {
   .portfolios .project-5 .project-description {
     position: relative;
     left: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -948,7 +1541,8 @@ footer p {
   .portfolios .project-6 .project-description {
     position: relative;
     right: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -959,7 +1553,8 @@ footer p {
   .portfolios .project-7 .project-description {
     position: relative;
     left: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -970,7 +1565,8 @@ footer p {
   .portfolios .project-8 .project-description {
     position: relative;
     right: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -981,7 +1577,8 @@ footer p {
   .portfolios .project-9 .project-description {
     position: relative;
     left: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -992,7 +1589,8 @@ footer p {
   .portfolios .project-10 .project-description {
     position: relative;
     right: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -1003,7 +1601,8 @@ footer p {
   .portfolios .project-11 .project-description {
     position: relative;
     left: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -1014,7 +1613,8 @@ footer p {
   .portfolios .project-12 .project-description {
     position: relative;
     right: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -1025,7 +1625,8 @@ footer p {
   .portfolios .project-13 .project-description {
     position: relative;
     left: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -1036,7 +1637,8 @@ footer p {
   .portfolios .project-14 .project-description {
     position: relative;
     right: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -1047,7 +1649,8 @@ footer p {
   .portfolios .project-15 .project-description {
     position: relative;
     left: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -1058,7 +1661,8 @@ footer p {
   .portfolios .project-16 .project-description {
     position: relative;
     right: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -1069,7 +1673,8 @@ footer p {
   .portfolios .project-17 .project-description {
     position: relative;
     left: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
@@ -1080,12 +1685,13 @@ footer p {
   .portfolios .project-18 .project-description {
     position: relative;
     right: 50px;
-    top: 4em;
+    max-width: 400px;
+    top: 3em;
     font-size: 20px;
     padding: 2rem 2rem;
   }
   .portfolios img {
-    height: 450px;
-    width: 600px;
+    height: 400px;
+    width: 500px;
   }
 }
