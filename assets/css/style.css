@@ -911,7 +911,7 @@ div.circle svg circle {
   margin: 1rem 0;
 }
 .contact .input {
-  width: 100%;
+  width: 95%;
   outline: none;
   border: 2px solid #fafafa;
   background: none;
@@ -1150,6 +1150,7 @@ div.circle svg circle {
   .contact .input,
   .contact textarea.input {
     padding: 0.45rem 0rem;
+    padding-left: 1em;
   }
   .contact .btn {
     padding: 0.45rem 1.2rem;
