@@ -73,6 +73,8 @@ body {
 .portfolios .project-15,
 .portfolios .project-17 {
   display: flex;
+  align-items: flex-start;
+  /* flex-direction: column; */
   flex-wrap: wrap;
 }
 .portfolios .project-1 .project-description,
@@ -97,6 +99,8 @@ body {
 .portfolios .project-16,
 .portfolios .project-18 {
   display: flex;
+  align-items: flex-start;
+  /* flex-direction: column; */
   flex-wrap: wrap;
 }
 .portfolios .project-2 .project-description,
@@ -151,16 +155,11 @@ footer p {
 div.circle {
   position: absolute;
   opacity: 0.6;
-  margin: -10%;
-}
-div.circle svg {
-  height: 500px;
-  width: 500px;
-}
-div.circle svg circle {
-  stroke: rgba(255, 57, 5, 0.25);
-  stroke-width: 30;
-  fill: transparent;
+  border-radius: 50%;
+  border: 2em solid rgba(255, 57, 5, 0.25);
+  height: 180px;
+  width: 180px;
+  margin-top: -10%;
 }
 .square {
   z-index: -2;
@@ -170,7 +169,7 @@ div.circle svg circle {
   border-color: rgba(255, 57, 5, 0.25);
   opacity: 0.6;
   position: absolute;
-  right: -100px;
+  right: 0px;
 }
 .clip-wrap {
   position: absolute;
@@ -204,7 +203,9 @@ div.circle svg circle {
   bottom: 14px;
 }
 .clip-svg {
-  position: absolute;
+  position: fixed;
+  float: left;
+  text-align: unset;
 }
 .plus {
   background: rgba(255, 57, 5, 0.25);
@@ -238,6 +239,10 @@ div.circle svg circle {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  div.circle {
+    width: 350px;
+    height: 350px;
+  }
   .contact {
     padding: 2em;
   }

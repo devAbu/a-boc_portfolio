@@ -71,6 +71,7 @@ body {
     }
   }
 
+
   .projects {
     margin-bottom: 3rem;
   }
@@ -85,6 +86,8 @@ body {
   .project-15,
   .project-17 {
     display: flex;
+    align-items: flex-start;
+    /* flex-direction: column; */
     flex-wrap: wrap;
 
     .project-description {
@@ -103,6 +106,8 @@ body {
   .project-16,
   .project-18 {
     display: flex;
+    align-items: flex-start;
+    /* flex-direction: column; */
     flex-wrap: wrap;
 
     .project-description {
@@ -152,18 +157,11 @@ footer {
 div.circle {
   position: absolute;
   opacity: 0.6;
-  margin: -10%;
-
-  svg {
-    height: 500px;
-    width: 500px;
-
-    circle {
-      stroke: rgba(255, 57, 5, 0.25);
-      stroke-width: 30;
-      fill: transparent;
-    }
-  }
+  border-radius: 50%;
+  border: 2em solid rgba(255, 57, 5, 0.25);
+  height: 180px;
+  width: 180px;
+  margin-top: -10%;
 }
 
 .square {
@@ -174,7 +172,7 @@ div.circle {
   border-color: rgba(255, 57, 5, 0.25);
   opacity: 0.6;
   position: absolute;
-  right: -100px;
+  right: 0px;
 }
 
 .clip-wrap {
@@ -215,7 +213,9 @@ div.circle {
 }
 
 .clip-svg {
-  position: absolute;
+  position: fixed;
+  float: left;
+  text-align: unset;
 }
 
 .plus {
@@ -253,6 +253,11 @@ div.circle {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  div.circle {
+    width: 350px;
+    height: 350px;
+  }
+
   .contact {
     padding: 2em;
   }
