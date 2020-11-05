@@ -426,6 +426,9 @@ div.circle {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .portfolios {
+    width: 90%;
+  }
   .portfolios .project-1,
   .portfolios .project-3,
   .portfolios .project-5,
@@ -501,7 +504,7 @@ div.circle {
   .portfolios .project-15,
   .portfolios .project-17 {
     flex-wrap: nowrap;
-    margin-left: 28.6%;
+    margin-left: 35.6%;
   }
   .portfolios .project-1 .project-description,
   .portfolios .project-3 .project-description,
@@ -528,6 +531,13 @@ div.circle {
   .portfolios .project-17 .project-description h1 {
     text-align: right;
   }
+  .portfolios .project-5 {
+    margin-left: 25%;
+  }
+  .portfolios .project-9,
+  .portfolios .project-11 {
+    margin-left: 5%;
+  }
   .portfolios .project-2,
   .portfolios .project-4,
   .portfolios .project-6,
@@ -538,7 +548,7 @@ div.circle {
   .portfolios .project-16,
   .portfolios .project-18 {
     flex-wrap: nowrap;
-    margin-right: 28.6%;
+    margin-right: 35.6%;
   }
   .portfolios .project-2 .project-description,
   .portfolios .project-4 .project-description,
@@ -553,6 +563,10 @@ div.circle {
     top: 1em;
     font-size: 18px;
     padding: 2rem 2rem;
+  }
+  .portfolios .project-6,
+  .portfolios .project-10 {
+    margin-right: 20%;
   }
 }
 /* Extra large devices (large laptops and desktops, 1600px and up) */
