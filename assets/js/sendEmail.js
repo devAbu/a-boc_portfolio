@@ -17,10 +17,10 @@ sendBtn.addEventListener("click", () => {
       duration: 3000,
       newWindow: true,
       close: true,
-      gravity: "bottom", // `top` or `bottom`
-      position: 'right', // `left`, `center` or `right`
+      gravity: "top",
+      position: 'right',
       backgroundColor: "linear-gradient(to right, #ff0000, #b80000)",
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      stopOnFocus: true,
     }).showToast();
   } else if (userEmail === "") {
     Toastify({
@@ -28,10 +28,10 @@ sendBtn.addEventListener("click", () => {
       duration: 3000,
       newWindow: true,
       close: true,
-      gravity: "bottom", // `top` or `bottom`
-      position: 'right', // `left`, `center` or `right`
+      gravity: "top",
+      position: 'right',
       backgroundColor: "linear-gradient(to right, #ff0000, #b80000)",
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      stopOnFocus: true,
     }).showToast();
   } else if (!validateEmail(userEmail)) {
     Toastify({
@@ -39,10 +39,10 @@ sendBtn.addEventListener("click", () => {
       duration: 3000,
       newWindow: true,
       close: true,
-      gravity: "bottom", // `top` or `bottom`
-      position: 'right', // `left`, `center` or `right`
+      gravity: "top",
+      position: 'right',
       backgroundColor: "linear-gradient(to right, #ff7b00, #b86e00)",
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      stopOnFocus: true,
     }).showToast();
   } else if (userMessage === "") {
     Toastify({
@@ -50,10 +50,10 @@ sendBtn.addEventListener("click", () => {
       duration: 3000,
       newWindow: true,
       close: true,
-      gravity: "bottom", // `top` or `bottom`
-      position: 'right', // `left`, `center` or `right`
+      gravity: "top",
+      position: 'right',
       backgroundColor: "linear-gradient(to right, #ff0000, #b80000)",
-      stopOnFocus: true, // Prevents dismissing of toast on hover
+      stopOnFocus: true,
     }).showToast();
   } else {
     var xhttp = new XMLHttpRequest();
@@ -61,19 +61,19 @@ sendBtn.addEventListener("click", () => {
       if (this.readyState == 4 && this.status == 200) {
         let response = this.responseText
         if (response.indexOf("sent") > -1) {
-          userName = ""
-          userEmail = ""
-          userPhone = ""
-          userMessage = ""
+          document.getElementById("userName").value = ""
+          document.getElementById("userEmail").value = ""
+          document.getElementById("userPhone").value = ""
+          document.getElementById("userMessage").value = ""
           Toastify({
             text: "Thank you",
             duration: 3000,
             newWindow: true,
             close: true,
-            gravity: "bottom", // `top` or `bottom`
-            position: 'right', // `left`, `center` or `right`
+            gravity: "bottom",
+            position: 'right',
             backgroundColor: "linear-gradient(to right, #5bfc49, #45ad00)",
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            stopOnFocus: true,
           }).showToast();
         } else {
           Toastify({
@@ -81,10 +81,10 @@ sendBtn.addEventListener("click", () => {
             duration: 3000,
             newWindow: true,
             close: true,
-            gravity: "bottom", // `top` or `bottom`
-            position: 'right', // `left`, `center` or `right`
+            gravity: "bottom",
+            position: 'right',
             backgroundColor: "linear-gradient(to right, #ff0000, #b80000)",
-            stopOnFocus: true, // Prevents dismissing of toast on hover
+            stopOnFocus: true,
           }).showToast();
         }
       }
