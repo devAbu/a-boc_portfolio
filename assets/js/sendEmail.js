@@ -1,45 +1,96 @@
 let sendBtn = document.getElementById("sendBtn")
-
+let form = document.getElementById("emailForm")
 sendBtn.addEventListener("click", () => {
-    let userName = document.getElementById("userName").value;
-    let userEmail = document.getElementById("userEmail").value;
-    let userPhone = document.getElementById("userPhone").value;
-    let userMessage = document.getElementById("userMessage").value;
-    function validateEmail($emailSign) {
-        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-        return emailReg.test($emailSign);
-    }
-    
-    if (userName === "") {
-        console.log('Please enter your name')
-    } else if(userEmail === ""){
-        console.log('Please enter you email')
-    } else if (!validateEmail(userEmail)) {
-        console.log("Please enter a valid email address.")
-    } else if (userMessage === "") {
-        console.log("Please enter your message.")
-    } else {
-        var xhttp = new XMLHttpRequest();
-       xhttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            console.log(this.responseText);
-           }
-         };
-    
-       xhttp.open("GET", "sendEmail.php?task=message&userName=" + userName + "&userEmail=" + userEmail + "&userPhone=" + userPhone + "&userMessage=" + userMessage, true);
-       xhttp.send();
-        /*$.ajax({
-            url: ,
-            success: function (data) {
-                if (data.indexOf('sent') > -1) {
-                    console.log('Email sent, thank you!')
-                } else {
-                    console.log("An error occurred. Please try later.")
-                }
-            },
-            error: function (data, err) {
-                console.log("There is an error. Please try again later.")
-            }
-        });*/
-    }
+  let userName = document.getElementById("userName").value;
+  let userEmail = document.getElementById("userEmail").value;
+  let userPhone = document.getElementById("userPhone").value;
+  let userMessage = document.getElementById("userMessage").value;
+
+  function validateEmail($emailSign) {
+    let emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    return emailReg.test($emailSign);
+  }
+
+  if (userName === "") {
+    Toastify({
+      text: "Please enter your name",
+      duration: 3000,
+      newWindow: true,
+      close: true,
+      gravity: "bottom", // `top` or `bottom`
+      position: 'right', // `left`, `center` or `right`
+      backgroundColor: "linear-gradient(to right, #ff0000, #b80000)",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+    }).showToast();
+  } else if (userEmail === "") {
+    Toastify({
+      text: "Please enter you email",
+      duration: 3000,
+      newWindow: true,
+      close: true,
+      gravity: "bottom", // `top` or `bottom`
+      position: 'right', // `left`, `center` or `right`
+      backgroundColor: "linear-gradient(to right, #ff0000, #b80000)",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+    }).showToast();
+  } else if (!validateEmail(userEmail)) {
+    Toastify({
+      text: "Please enter a valid email address.",
+      duration: 3000,
+      newWindow: true,
+      close: true,
+      gravity: "bottom", // `top` or `bottom`
+      position: 'right', // `left`, `center` or `right`
+      backgroundColor: "linear-gradient(to right, #ff7b00, #b86e00)",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+    }).showToast();
+  } else if (userMessage === "") {
+    Toastify({
+      text: "Please enter your message.",
+      duration: 3000,
+      newWindow: true,
+      close: true,
+      gravity: "bottom", // `top` or `bottom`
+      position: 'right', // `left`, `center` or `right`
+      backgroundColor: "linear-gradient(to right, #ff0000, #b80000)",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+    }).showToast();
+  } else {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        let response = this.responseText
+        if (response.indexOf("sent") > -1) {
+          userName = ""
+          userEmail = ""
+          userPhone = ""
+          userMessage = ""
+          Toastify({
+            text: "Thank you",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "bottom", // `top` or `bottom`
+            position: 'right', // `left`, `center` or `right`
+            backgroundColor: "linear-gradient(to right, #5bfc49, #45ad00)",
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+          }).showToast();
+        } else {
+          Toastify({
+            text: "There is some problem. Please try again later.",
+            duration: 3000,
+            newWindow: true,
+            close: true,
+            gravity: "bottom", // `top` or `bottom`
+            position: 'right', // `left`, `center` or `right`
+            backgroundColor: "linear-gradient(to right, #ff0000, #b80000)",
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+          }).showToast();
+        }
+      }
+    };
+
+    xhttp.open("GET", "sendEmail.php?task=message&userName=" + userName + "&userEmail=" + userEmail + "&userPhone=" + userPhone + "&userMessage=" + userMessage, true);
+    xhttp.send();
+  }
 })

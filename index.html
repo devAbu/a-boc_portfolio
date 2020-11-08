@@ -7,11 +7,13 @@
   <title>A-BOC</title>
   <link rel="stylesheet" href="assets/css/style.css">
 
-
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon_io/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
 </head>
 
 <body>
@@ -190,22 +192,22 @@
           <div class="info">
             <div class="information">
               <img src="assets/images/location.png" class="icon" alt="" />
-              <p>92 Cherry Drive Uniondale, NY 11553</p>
+              <p>Oteška 26, Sarajevo</p>
             </div>
             <div class="information">
               <img src="assets/images/email.png" class="icon" alt="" />
-              <p>lorem@ipsum.com</p>
+              <p><a href="mailto:contact@a-boc.com">contact@a-boc.com</a></p>
             </div>
             <div class="information">
               <img src="assets/images/phone.png" class="icon" alt="" />
-              <p>123-456-789</p>
+              <p><a href="tel:+38761085814">(+387)61-085-814</a></p>
             </div>
           </div>
 
           <div class="social-media">
             <p>Connect with us :</p>
             <div class="social-icons">
-              <a href="https://www.facebook.com/A-BOC-113211550105166/about/" target="_blank">
+              <a href="https://www.facebook.com/A-BOC-113211550105166/?ref=page_internal" target="_blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a href="https://www.linkedin.com/company/aboc-dev/" target="_blank">
@@ -219,7 +221,7 @@
           <span class="circle2 one"></span>
           <span class="circle2 two"></span>
 
-          <form autocomplete="off">
+          <form autocomplete="off" id="emailForm">
             <h3 class="title">Contact us</h3>
             <div class="input-container">
               <input type="text" name="userName" class="input" id="userName" />
@@ -272,9 +274,10 @@
     }
 
   </script>
-  <script src="app.js"></script>
+  <script src="assets/js/app.js"></script>
   <script src="assets/js/sendEmail.js"></script>
 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 

@@ -4,7 +4,8 @@
   "description": "Portfolio",
   "main": "index.js",
   "dependencies": {
-    "lax.js": "^1.2.5"
+    "lax.js": "^1.2.5",
+    "toastify-js": "^1.9.3"
   },
   "devDependencies": {},
   "scripts": {
