@@ -1291,7 +1291,7 @@ div.circle {
   display: flex;
 }
 
-.DrugiDio div.knowUs p {
+.DrugiDio div.knowUs p.vertical {
  writing-mode: tb-rl;
  display: flex;
  align-items: flex-start;
@@ -1310,3 +1310,16 @@ div.circle {
   border-radius: 15px;
 }
 
+.DrugiDio div.knowUs div.serviceDescription{
+  width: 300px;
+  height: 350px;
+  border: 1px solid #618179;
+  border-radius: 15px;
+}
+
+.DrugiDio div.knowUs div.contactDescription{
+  width: 300px;
+  height: 350px;
+  border: 1px solid #618179;
+  border-radius: 15px;
+}
