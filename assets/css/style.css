@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
 }
 * {
   margin: 0;
@@ -11,7 +11,7 @@
   user-select: none;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f3f3f7;
   user-select: none;
   -ms-user-select: none;
@@ -142,7 +142,7 @@ body {
 }
 ::placeholder {
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 footer {
   color: #ccac00;
@@ -826,56 +826,56 @@ div.circle {
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: local('Poppins Thin'), local('Poppins-Thin'), url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrLPTedw.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiGyp8kv8JHgFVrLPTedw.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: local('Poppins ExtraLight'), local('Poppins-ExtraLight'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLFj_V1s.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Poppins Regular'), local('Poppins-Regular'), url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local('Poppins Medium'), local('Poppins-Medium'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local('Poppins Bold'), local('Poppins-Bold'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'), url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDD4V1s.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDD4V1s.ttf) format('truetype');
 }
 .contact .container {
   position: relative;
@@ -1199,12 +1199,10 @@ div.circle {
     margin-left: auto;
   }
 }
-/* Update */
 .topnav {
   overflow: hidden;
   background-color: #e2e1dd;
 }
-
 .topnav a {
   float: left;
   color: #618179;
@@ -1213,29 +1211,23 @@ div.circle {
   text-decoration: none;
   font-size: 17px;
 }
-
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
-
-.navbar .topnav a.left img{
+.navbar .topnav a.left img {
   margin-top: 5px;
   margin-left: 10px;
   width: 20px;
 }
-
-
-.navbar .topnav a.middle img{
+.navbar .topnav a.middle img {
   width: 50px;
 }
-
 .navbar .topnav div.right {
   float: right;
 }
-
 .navbar .topnav div.right button {
-  background-color:none;
+  background-color: none;
   color: #618179;
   border: 1px solid #618179;
   border-radius: 25px;
@@ -1243,13 +1235,11 @@ div.circle {
   height: 50px;
   font-size: 16px;
 }
-
-.prviDio div.slika img{
+.prviDio div.slika img {
   width: 100%;
   height: 750px;
   position: absolute;
 }
-
 .prviDio div.slika div.pozadinaTekst {
   background-color: #0a171c;
   opacity: 73%;
@@ -1257,69 +1247,126 @@ div.circle {
   width: 500px;
   margin-left: 10%;
 }
-
-
-.prviDio div.slika div.pozadinaTekst h1{
+.prviDio div.slika div.pozadinaTekst h1 {
   padding-top: 120px;
   padding-left: 40px;
   font-size: 60px;
   color: #618179;
 }
-
 .prviDio div.slika div.pozadinaTekst p {
   padding-top: 100px;
   padding-left: 20px;
   padding-right: 20px;
   color: #618179;
 }
-
-.DrugiDio div.Naslov h3{
+.DrugiDio {
+  margin-top: 5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.DrugiDio div.Naslov {
+  margin-bottom: 1.5em;
+}
+.DrugiDio div.Naslov h3 {
   font-size: 32px;
   font-weight: 700;
   color: #618179;
   text-align: center;
 }
-
-.DrugiDio div.Naslov p{
+.DrugiDio div.Naslov p {
   font-size: 14px;
   font-weight: 400;
   color: #618179;
   text-align: center;
 }
-
-.DrugiDio div.knowUs{
+.DrugiDio div.knowUs {
   display: flex;
+  /* div.workDescription {
+      width: 300px;
+      height: 350px;
+      border: 1px solid #618179;
+      border-radius: 15px;
+    }
+    div.serviceDescription {
+      width: 300px;
+      height: 350px;
+      border: 1px solid #618179;
+      border-radius: 15px;
+    }
+    div.contactDescription {
+      width: 300px;
+      height: 350px;
+      border: 1px solid #618179;
+      border-radius: 15px;
+    } */
 }
-
 .DrugiDio div.knowUs p.vertical {
- writing-mode: tb-rl;
- display: flex;
- align-items: flex-start;
- justify-content: flex-end;
- transform: rotate(180deg);
- text-align: left;
- color: #618179;
- font-size: 32px;
+  writing-mode: tb-rl;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  transform: rotate(180deg);
+  text-align: left;
+  color: #618179;
+  font-size: 32px;
 }
-
-
-.DrugiDio div.knowUs div.workDescription{
+.DrugiDio div.knowUs .box {
+  margin: 0 2em;
+  padding: 0.8em 1.2em;
   width: 300px;
   height: 350px;
   border: 1px solid #618179;
   border-radius: 15px;
 }
-
-.DrugiDio div.knowUs div.serviceDescription{
-  width: 300px;
-  height: 350px;
-  border: 1px solid #618179;
-  border-radius: 15px;
+.DrugiDio div.knowUs .box button {
+  margin: 1.5em 0;
+  padding: 0.7em;
+  background-color: #737373;
+  color: white;
+  border: 2px solid #8c8c8c;
+  outline: 2px solid white;
+  transition: outline-offset 250ms ease;
 }
-
-.DrugiDio div.knowUs div.contactDescription{
-  width: 300px;
-  height: 350px;
-  border: 1px solid #618179;
+.DrugiDio div.knowUs .box button:hover,
+.DrugiDio div.knowUs .box button:focus {
+  cursor: pointer;
+  background-color: #8c8c8c;
+  outline-offset: -5px;
+}
+.our_services {
+  margin-left: 10%;
+  margin-right: 11%;
+}
+.our_services .title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #618179;
+}
+.our_services .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.our_services .services .box {
+  border: 1px solid #806c00;
   border-radius: 15px;
+  flex: 0 0 30%;
+  margin: 1.5em 1em;
+}
+.our_services .services .box .box-title {
+  padding: 1.5em;
+  border-bottom: 1px solid #806c00;
+  display: flex;
+  justify-content: space-between;
+}
+.our_services .services .box .box-body {
+  padding: 2.3em;
+}
+.our_services .services .box .box-body p {
+  margin-bottom: 1.5em;
+}
+.our_services .services .box .box-body span {
+  border-bottom: 1px solid red;
+  padding-bottom: 0.5em;
 }

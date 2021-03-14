@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @primaryColor: darken(gold, 10%);
 @secondaryColor: lighten(black, 45%);
 @box-shadow-right: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
 @box-shadow-left: -6px 6px 10px -3px rgba(150, 142, 150, 0.86);
 
-@gradient-from-left: linear-gradient(90deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
-@gradient-from-right: linear-gradient(270deg, hsla(0, 0%, 100%, 0.11) 37%, #fff 68%, #fff);
+@gradient-from-left: linear-gradient(
+  90deg,
+  hsla(0, 0%, 100%, 0.11) 37%,
+  #fff 68%,
+  #fff
+);
+@gradient-from-right: linear-gradient(
+  270deg,
+  hsla(0, 0%, 100%, 0.11) 37%,
+  #fff 68%,
+  #fff
+);
 
 * {
   margin: 0;
@@ -14,7 +24,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f3f3f7;
   user-select: none;
   -ms-user-select: none;
@@ -67,10 +77,9 @@ body {
     p {
       margin-top: 1rem;
       text-align: left;
-      color: @secondaryColor
+      color: @secondaryColor;
     }
   }
-
 
   .projects {
     margin-bottom: 3rem;
@@ -136,12 +145,11 @@ body {
   textarea {
     resize: none;
   }
-
 }
 
 ::placeholder {
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 footer {
@@ -195,13 +203,36 @@ div.circle {
 
 .clip-each,
 .clip-each:after {
-  -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  -webkit-clip-path: polygon(
+    30% 0,
+    70% 0,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0 70%,
+    0 30%
+  );
+  clip-path: polygon(
+    30% 0,
+    70% 0,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0 70%,
+    0 30%
+  );
   clip-path: url("#octagon-clip");
 }
 
 .border-style-gradient {
-  background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ba59a6 0%,
+    #69aed8 50%,
+    #1c12a8 100%
+  );
   background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
 }
 
@@ -222,7 +253,20 @@ div.circle {
   background: rgba(255, 57, 5, 0.25);
   width: 150px;
   height: 150px;
-  clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
   position: absolute;
   opacity: 0.6;
   left: 0;
@@ -234,14 +278,30 @@ div.circle {
   height: 200px;
   position: absolute;
   opacity: 0.6;
-  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
   left: unset;
   right: 0;
   margin-top: 50px;
 }
 
 .rhombus {
-  background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+  background: -webkit-linear-gradient(
+    left,
+    #ba59a6 0%,
+    #69aed8 50%,
+    #1c12a8 100%
+  );
   background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
   width: 175px;
   height: 175px;
@@ -263,7 +323,6 @@ div.circle {
   }
 
   .portfolios {
-
     .project-1,
     .project-3,
     .project-5,
@@ -316,7 +375,6 @@ div.circle {
 /* Medium devices (landscape tablets, 769px and up) */
 @media only screen and (min-width: 769px) {
   .portfolios {
-
     .project-1,
     .project-3,
     .project-5,
@@ -369,7 +427,6 @@ div.circle {
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .portfolios {
-
     .project-1,
     .project-3,
     .project-5,
@@ -419,7 +476,6 @@ div.circle {
 
 @media only screen and (min-width: 1200px) {
   .portfolios {
-
     width: 90%;
 
     .project-1,
@@ -470,7 +526,6 @@ div.circle {
 
 @media only screen and (min-width: 1400px) {
   .portfolios {
-
     .project-1,
     .project-3,
     .project-5,
@@ -534,7 +589,6 @@ div.circle {
 /* Extra large devices (large laptops and desktops, 1600px and up) */
 @media only screen and (min-width: 1600px) {
   .portfolios {
-
     .project-1,
     .project-3,
     .project-5,
@@ -608,11 +662,9 @@ div.circle {
   }
 }
 
-
 /* Extra large devices (large laptops and desktops, 1900px and up) */
 @media only screen and (min-width: 1900px) {
   .portfolios {
-
     .project-1,
     .project-3,
     .project-5,
@@ -626,7 +678,6 @@ div.circle {
       margin-left: 33.3%;
 
       .project-description {
-
         h1 {
           text-align: right;
         }
@@ -672,7 +723,6 @@ div.circle {
       height: 400px;
       width: 500px;
     }
-
   }
 
   div.circle {
@@ -723,14 +773,42 @@ div.circle {
 
   .clip-each,
   .clip-each:after {
-    -webkit-clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
-    clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+    -webkit-clip-path: polygon(
+      30% 0,
+      70% 0,
+      100% 30%,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0 70%,
+      0 30%
+    );
+    clip-path: polygon(
+      30% 0,
+      70% 0,
+      100% 30%,
+      100% 70%,
+      70% 100%,
+      30% 100%,
+      0 70%,
+      0 30%
+    );
     clip-path: url("#octagon-clip");
   }
 
   .border-style-gradient {
-    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
-    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: -webkit-linear-gradient(
+      left,
+      #ba59a6 0%,
+      #69aed8 50%,
+      #1c12a8 100%
+    );
+    background: linear-gradient(
+      to right,
+      #ba59a6 0%,
+      #69aed8 50%,
+      #1c12a8 100%
+    );
   }
 
   .border-style-gradient:after {
@@ -748,7 +826,20 @@ div.circle {
     background: rgba(255, 57, 5, 0.25);
     width: 250px;
     height: 250px;
-    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    clip-path: polygon(
+      20% 0%,
+      0% 20%,
+      30% 50%,
+      0% 80%,
+      20% 100%,
+      50% 70%,
+      80% 100%,
+      100% 80%,
+      70% 50%,
+      100% 20%,
+      80% 0%,
+      50% 30%
+    );
     position: absolute;
     right: 10px;
     opacity: 0.6;
@@ -761,13 +852,34 @@ div.circle {
     height: 300px;
     position: absolute;
     opacity: 0.6;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
     left: 0;
   }
 
   .rhombus {
-    background: -webkit-linear-gradient(left, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
-    background: linear-gradient(to right, #ba59a6 0%, #69aed8 50%, #1c12a8 100%);
+    background: -webkit-linear-gradient(
+      left,
+      #ba59a6 0%,
+      #69aed8 50%,
+      #1c12a8 100%
+    );
+    background: linear-gradient(
+      to right,
+      #ba59a6 0%,
+      #69aed8 50%,
+      #1c12a8 100%
+    );
     width: 325px;
     height: 325px;
     position: absolute;
@@ -1159,6 +1271,203 @@ div.circle {
     .btn {
       padding: 0.45rem 1.2rem;
       margin-left: auto;
+    }
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e2e1dd;
+
+  a {
+    float: left;
+    color: #618179;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
+}
+
+.navbar {
+  .topnav {
+    a.left img {
+      margin-top: 5px;
+      margin-left: 10px;
+      width: 20px;
+    }
+    a.middle img {
+      width: 50px;
+    }
+    div.right {
+      float: right;
+      button {
+        background-color: none;
+        color: #618179;
+        border: 1px solid #618179;
+        border-radius: 25px;
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.prviDio div.slika {
+  img {
+    width: 100%;
+    height: 750px;
+    position: absolute;
+  }
+  div.pozadinaTekst {
+    background-color: #0a171c;
+    opacity: 73%;
+    height: 750px;
+    width: 500px;
+    margin-left: 10%;
+
+    h1 {
+      padding-top: 120px;
+      padding-left: 40px;
+      font-size: 60px;
+      color: #618179;
+    }
+    p {
+      padding-top: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: #618179;
+    }
+  }
+}
+
+.DrugiDio {
+  margin-top: 5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  div.Naslov {
+    margin-bottom: 1.5em;
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #618179;
+      text-align: center;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #618179;
+      text-align: center;
+    }
+  }
+  div.knowUs {
+    display: flex;
+
+    p.vertical {
+      writing-mode: tb-rl;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      transform: rotate(180deg);
+      text-align: left;
+      color: #618179;
+      font-size: 32px;
+    }
+    .box {
+      margin: 0 2em;
+      padding: 0.8em 1.2em;
+      width: 300px;
+      height: 350px;
+      border: 1px solid #618179;
+      border-radius: 15px;
+
+      button {
+        margin: 1.5em 0;
+        padding: 0.7em;
+        background-color: @secondaryColor;
+        color: white;
+        border: 2px solid lighten(@secondaryColor, 10%);
+        outline: 2px solid white;
+        transition: outline-offset 250ms ease;
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          background-color: lighten(@secondaryColor, 10%);
+          outline-offset: -5px;
+        }
+      }
+    }
+
+    /* div.workDescription {
+      width: 300px;
+      height: 350px;
+      border: 1px solid #618179;
+      border-radius: 15px;
+    }
+    div.serviceDescription {
+      width: 300px;
+      height: 350px;
+      border: 1px solid #618179;
+      border-radius: 15px;
+    }
+    div.contactDescription {
+      width: 300px;
+      height: 350px;
+      border: 1px solid #618179;
+      border-radius: 15px;
+    } */
+  }
+}
+
+.our_services {
+  margin-left: 10%;
+  margin-right: 11%;
+
+  .title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #618179;
+  }
+
+  .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .box {
+      border: 1px solid darken(@primaryColor, 15%);
+      border-radius: 15px;
+      flex: 0 0 30%;
+      margin: 1.5em 1em;
+
+      .box-title {
+        padding: 1.5em;
+        border-bottom: 1px solid darken(@primaryColor, 15%);
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .box-body {
+        padding: 2.3em;
+
+        p {
+          margin-bottom: 1.5em;
+        }
+
+        span {
+          border-bottom: 1px solid red;
+          padding-bottom: 0.5em;
+        }
+      }
     }
   }
 }
