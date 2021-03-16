@@ -1337,7 +1337,7 @@ div.circle {
   margin-left: 10%;
   margin-right: 11%;
 }
-.our_services .title {
+.our_services .title h3 {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
@@ -1369,4 +1369,58 @@ div.circle {
 .our_services .services .box .box-body span {
   border-bottom: 1px solid red;
   padding-bottom: 0.5em;
+}
+.our_work {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.our_work .work {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our_work .work .title {
+  text-align: left;
+  background-color: blue;
+  flex: 45%;
+  max-width: 45%;
+  padding: 0 4px;
+  align-self: center;
+}
+.our_work .work .title h3 {
+  font-size: 102px;
+  font-weight: 700;
+  color: #618179;
+}
+.our_work .work .title p {
+  padding-left: 10%;
+}
+.our_work .work .project_1 {
+  flex: 45%;
+  max-width: 45%;
+  padding: 0 4px;
+  height: 550px;
+}
+.our_work .work .project_1 img {
+  vertical-align: middle;
+  height: 100%;
+}
+.our_work .work .project_2 {
+  flex: 45%;
+  max-width: 45%;
+  padding: 0 4px;
+  height: 550px;
+}
+.our_work .work .project_2 img {
+  vertical-align: middle;
+  height: 100%;
+}
+.our_work .work .project_3 {
+  flex: 45%;
+  max-width: 45%;
+  padding: 0 4px;
+  align-self: center;
+}
+.our_work .work .project_3 img {
+  vertical-align: middle;
 }
