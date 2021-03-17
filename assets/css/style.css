@@ -1199,41 +1199,140 @@ div.circle {
     margin-left: auto;
   }
 }
+/* 
 .topnav {
   overflow: hidden;
   background-color: #e2e1dd;
+
+  a {
+    float: left;
+    color: #618179;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
 }
-.topnav a {
-  float: left;
-  color: #618179;
-  text-align: center;
-  padding: 14px 16px;
+
+.navbar {
+  .topnav {
+    a.left img {
+      margin-top: 5px;
+      margin-left: 10px;
+      width: 20px;
+    }
+    a.middle img {
+      width: 50px;
+    }
+    div.right {
+      float: right;
+      button {
+        background-color: none;
+        color: #618179;
+        border: 1px solid #618179;
+        border-radius: 25px;
+        width: 100px;
+        height: 50px;
+        font-size: 16px;
+      }
+    }
+  }
+} */
+.newNav nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5d4954;
+}
+.newNav nav .logo {
+  color: #e2e2e2;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+.newNav nav .nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.newNav nav .nav-links li {
+  list-style: none;
+}
+.newNav nav .nav-links a {
+  color: #e2e2e2;
   text-decoration: none;
-  font-size: 17px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
 }
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
+.newNav nav .burger {
+  display: none;
+  cursor: pointer;
 }
-.navbar .topnav a.left img {
-  margin-top: 5px;
-  margin-left: 10px;
-  width: 20px;
+.newNav nav .burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #e2e2e2;
+  margin: 5px;
+  transition: all 0.3s ease;
 }
-.navbar .topnav a.middle img {
-  width: 50px;
+@media screen and (max-width: 1024px) {
+  .newNav nav .nav-links {
+    width: 60%;
+  }
 }
-.navbar .topnav div.right {
-  float: right;
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .newNav nav .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .newNav nav .nav-links li {
+    opacity: 0;
+  }
+  .newNav nav .burger {
+    display: block;
+  }
 }
-.navbar .topnav div.right button {
-  background-color: none;
-  color: #618179;
-  border: 1px solid #618179;
-  border-radius: 25px;
-  width: 100px;
-  height: 50px;
-  font-size: 16px;
+.nav-active {
+  transform: translateX(0%) !important;
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 .prviDio div.slika img {
   width: 100%;
