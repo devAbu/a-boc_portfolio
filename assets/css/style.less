@@ -1337,6 +1337,7 @@ div.circle {
       display: flex;
       justify-content: space-around;
       width: 30%;
+      /* transform: translateX(100%); */
 
       li {
         list-style: none;
@@ -1380,6 +1381,7 @@ div.circle {
   .newNav {
     nav {
       .nav-links {
+        overflow: hidden;
         position: absolute;
         right: 0;
         height: 92vh;
@@ -1389,10 +1391,9 @@ div.circle {
         flex-direction: column;
         align-items: center;
         z-index: 999;
-        width: 50%;
+        width: 0%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-
+        transition: transform 0.5s ease-in, width 0.5s ease-in-out;
         li {
           opacity: 0;
         }
@@ -1407,6 +1408,7 @@ div.circle {
 
 .nav-active {
   transform: translateX(0%) !important;
+  width: 50% !important;
 }
 
 @keyframes navLinkFade {
@@ -1435,20 +1437,20 @@ div.circle {
 .prviDio div.slika {
   img {
     width: 100%;
-    height: 750px;
+    height: 95vh;
     position: absolute;
   }
   div.pozadinaTekst {
     background-color: #0a171c;
     opacity: 73%;
-    height: 750px;
-    width: 500px;
+    height: 95vh;
+    width: 30vw;
     margin-left: 10%;
 
     h1 {
       padding-top: 120px;
       padding-left: 40px;
-      font-size: 60px;
+      font-size: 3.5em;
       color: #618179;
     }
     p {
@@ -1456,6 +1458,23 @@ div.circle {
       padding-left: 20px;
       padding-right: 20px;
       color: #618179;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .prviDio div.slika {
+    div.pozadinaTekst {
+      width: 70vw;
+
+      h1 {
+        padding-top: 60px;
+        padding-left: 20px;
+        font-size: 2.5em;
+      }
+      p {
+        padding-top: 1em;
+      }
     }
   }
 }
