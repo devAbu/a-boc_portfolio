@@ -1396,6 +1396,7 @@ div.circle {
 }
 .DrugiDio div.knowUs {
   display: flex;
+  flex-wrap: wrap;
   /* div.workDescription {
       width: 300px;
       height: 350px;
@@ -1426,10 +1427,9 @@ div.circle {
   font-size: 32px;
 }
 .DrugiDio div.knowUs .box {
+  flex: 5%;
   margin: 0 2em;
   padding: 0.8em 1.2em;
-  width: 300px;
-  height: 350px;
   border: 1px solid #618179;
   border-radius: 15px;
 }
@@ -1447,6 +1447,31 @@ div.circle {
   cursor: pointer;
   background-color: #8c8c8c;
   outline-offset: -5px;
+}
+@media only screen and (max-width: 720px) {
+  .DrugiDio {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .DrugiDio div.knowUs p.vertical {
+    display: none;
+  }
+  .DrugiDio div.knowUs .box {
+    flex: 100%;
+    margin-top: 1em;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .DrugiDio {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .DrugiDio div.knowUs p.vertical {
+    display: none;
+  }
+  .DrugiDio div.knowUs .box {
+    margin-top: 1em;
+  }
 }
 .our_services {
   margin-left: 10%;
@@ -1466,7 +1491,7 @@ div.circle {
 .our_services .services .box {
   border: 1px solid #806c00;
   border-radius: 15px;
-  flex: 0 0 30%;
+  flex: 30%;
   margin: 1.5em 1em;
 }
 .our_services .services .box .box-title {
@@ -1496,7 +1521,6 @@ div.circle {
 }
 .our_work .work .title {
   text-align: left;
-  background-color: blue;
   flex: 45%;
   max-width: 45%;
   padding: 0 4px;
@@ -1538,4 +1562,14 @@ div.circle {
 }
 .our_work .work .project_3 img {
   vertical-align: middle;
+}
+@media only screen and (max-width: 720px) {
+  .our_work .work .title,
+  .our_work .work .project_1,
+  .our_work .work .project_2,
+  .our_work .work .project_3 {
+    margin-top: 1em;
+    flex: 100%;
+    max-width: 100%;
+  }
 }

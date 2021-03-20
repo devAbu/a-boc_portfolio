@@ -1501,6 +1501,7 @@ div.circle {
   }
   div.knowUs {
     display: flex;
+    flex-wrap: wrap;
 
     p.vertical {
       writing-mode: tb-rl;
@@ -1513,10 +1514,9 @@ div.circle {
       font-size: 32px;
     }
     .box {
+      flex: 5%;
       margin: 0 2em;
       padding: 0.8em 1.2em;
-      width: 300px;
-      height: 350px;
       border: 1px solid #618179;
       border-radius: 15px;
 
@@ -1559,6 +1559,37 @@ div.circle {
   }
 }
 
+@media only screen and (max-width: 720px) {
+  .DrugiDio {
+    margin-left: 5%;
+    margin-right: 5%;
+    div.knowUs {
+      p.vertical {
+        display: none;
+      }
+      .box {
+        flex: 100%;
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .DrugiDio {
+    margin-left: 5%;
+    margin-right: 5%;
+    div.knowUs {
+      p.vertical {
+        display: none;
+      }
+      .box {
+        margin-top: 1em;
+      }
+    }
+  }
+}
+
 .our_services {
   margin-left: 10%;
   margin-right: 11%;
@@ -1580,7 +1611,7 @@ div.circle {
     .box {
       border: 1px solid darken(@primaryColor, 15%);
       border-radius: 15px;
-      flex: 0 0 30%;
+      flex: 30%;
       margin: 1.5em 1em;
 
       .box-title {
@@ -1617,7 +1648,6 @@ div.circle {
 
     .title {
       text-align: left;
-      background-color: blue;
       flex: 45%;
       max-width: 45%;
       padding: 0 4px;
@@ -1662,6 +1692,21 @@ div.circle {
       align-self: center;
       img {
         vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .our_work {
+    .work {
+      .title,
+      .project_1,
+      .project_2,
+      .project_3 {
+        margin-top: 1em;
+        flex: 100%;
+        max-width: 100%;
       }
     }
   }
