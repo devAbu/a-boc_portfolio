@@ -40,3 +40,20 @@ const navSlide = () => {
 };
 
 navSlide();
+
+const navbarLinks = document.querySelectorAll(".nav-links li a");
+
+for (const link of navbarLinks) {
+  link.addEventListener("click", smoothScroll);
+}
+
+function smoothScroll(e) {
+  e.preventDefault();
+  const href = this.getAttribute("href");
+  const offsetTop = document.querySelector(href).offsetTop - 50;
+
+  scroll({
+    top: offsetTop,
+    behavior: "smooth",
+  });
+}

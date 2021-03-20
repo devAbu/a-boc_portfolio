@@ -1244,6 +1244,11 @@ div.circle {
   }
 } */
 .newNav nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2222;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -1259,8 +1264,7 @@ div.circle {
 .newNav nav .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 30%;
-  /* transform: translateX(100%); */
+  width: 40%;
 }
 .newNav nav .nav-links li {
   list-style: none;
@@ -1397,24 +1401,6 @@ div.circle {
 .DrugiDio div.knowUs {
   display: flex;
   flex-wrap: wrap;
-  /* div.workDescription {
-      width: 300px;
-      height: 350px;
-      border: 1px solid #618179;
-      border-radius: 15px;
-    }
-    div.serviceDescription {
-      width: 300px;
-      height: 350px;
-      border: 1px solid #618179;
-      border-radius: 15px;
-    }
-    div.contactDescription {
-      width: 300px;
-      height: 350px;
-      border: 1px solid #618179;
-      border-radius: 15px;
-    } */
 }
 .DrugiDio div.knowUs p.vertical {
   writing-mode: tb-rl;
@@ -1435,18 +1421,19 @@ div.circle {
 }
 .DrugiDio div.knowUs .box button {
   margin: 1.5em 0;
-  padding: 0.7em;
-  background-color: #737373;
-  color: white;
-  border: 2px solid #8c8c8c;
-  outline: 2px solid white;
-  transition: outline-offset 250ms ease;
+  padding: 15px 25px 10px;
+  color: black;
+  border: 2px solid #a6a6a6;
+  border-radius: 25px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
 }
 .DrugiDio div.knowUs .box button:hover,
 .DrugiDio div.knowUs .box button:focus {
   cursor: pointer;
   background-color: #8c8c8c;
-  outline-offset: -5px;
+  color: white;
 }
 @media only screen and (max-width: 720px) {
   .DrugiDio {
@@ -1507,8 +1494,13 @@ div.circle {
   margin-bottom: 1.5em;
 }
 .our_services .services .box .box-body span {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid grey;
   padding-bottom: 0.5em;
+  transition: border-bottom 0.3s ease;
+}
+.our_services .services .box .box-body span:hover {
+  cursor: pointer;
+  border-bottom: 1px solid red;
 }
 .our_work {
   margin-left: 10%;
@@ -1562,6 +1554,22 @@ div.circle {
 }
 .our_work .work .project_3 img {
   vertical-align: middle;
+}
+.our_work .work .project_3 button {
+  margin: 2.5em 2em;
+  padding: 15px 25px 10px;
+  color: black;
+  border: 2px solid #a6a6a6;
+  border-radius: 25px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: uppercase;
+}
+.our_work .work .project_3 button:hover,
+.our_work .work .project_3 button:focus {
+  cursor: pointer;
+  background-color: #8c8c8c;
+  color: white;
 }
 @media only screen and (max-width: 720px) {
   .our_work .work .title,
