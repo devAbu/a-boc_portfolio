@@ -1379,9 +1379,7 @@ div.circle {
   }
 }
 .DrugiDio {
-  margin-top: 5rem;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 5rem 10%;
 }
 .DrugiDio div.Naslov {
   margin-bottom: 1.5em;
@@ -1465,6 +1463,7 @@ div.circle {
 .our_services {
   margin-left: 10%;
   margin-right: 11%;
+  margin-bottom: 5rem;
 }
 .our_services .title h3 {
   text-align: center;
@@ -1495,6 +1494,7 @@ div.circle {
 .our_work {
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 5rem;
 }
 .our_work .work {
   display: flex;
@@ -1516,34 +1516,19 @@ div.circle {
 .our_work .work .title p {
   padding-left: 10%;
 }
-.our_work .work .project_1 {
+.our_work .work .project_box {
   flex: 45%;
   max-width: 45%;
   padding: 0 4px;
   height: 550px;
+  margin: 0.5em 0;
 }
-.our_work .work .project_1 img {
+.our_work .work .project_box img {
   vertical-align: middle;
   height: 100%;
-}
-.our_work .work .project_2 {
-  flex: 45%;
-  max-width: 45%;
-  padding: 0 4px;
-  height: 550px;
-}
-.our_work .work .project_2 img {
-  vertical-align: middle;
-  height: 100%;
-}
-.our_work .work .project_3 {
-  flex: 45%;
-  max-width: 45%;
-  padding: 0 4px;
-  align-self: center;
 }
 .our_work .work .project_3 img {
-  vertical-align: middle;
+  height: auto;
 }
 .our_work .work .project_3 button {
   margin: 2.5em 2em;
