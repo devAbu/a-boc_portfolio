@@ -42,14 +42,20 @@ const navSlide = () => {
 navSlide();
 
 const navbarLinks = document.querySelectorAll(".nav-links li a");
+const btns = document.querySelectorAll(".knowUs .box button");
 
 for (const link of navbarLinks) {
   link.addEventListener("click", smoothScroll);
 }
 
+for (const button of btns) {
+  button.addEventListener("click", smoothScroll);
+}
+
 function smoothScroll(e) {
   e.preventDefault();
-  const href = this.getAttribute("href");
+  const href = this.getAttribute("href") || this.getAttribute("class");
+  console.log(href);
   const offsetTop = document.querySelector(href).offsetTop - 50;
 
   scroll({

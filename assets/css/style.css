@@ -1430,10 +1430,12 @@ div.circle {
   text-transform: uppercase;
 }
 .DrugiDio div.knowUs .box button:hover,
-.DrugiDio div.knowUs .box button:focus {
+.DrugiDio div.knowUs .box button:focus,
+.DrugiDio div.knowUs .box button:active {
   cursor: pointer;
   background-color: #8c8c8c;
   color: white;
+  outline: none;
 }
 @media only screen and (max-width: 720px) {
   .DrugiDio {
