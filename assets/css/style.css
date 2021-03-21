@@ -1492,18 +1492,6 @@ div.circle {
 .our_services .services .box .box-body {
   padding: 2.3em;
 }
-.our_services .services .box .box-body p {
-  margin-bottom: 1.5em;
-}
-.our_services .services .box .box-body span {
-  border-bottom: 1px solid grey;
-  padding-bottom: 0.5em;
-  transition: border-bottom 0.3s ease;
-}
-.our_services .services .box .box-body span:hover {
-  cursor: pointer;
-  border-bottom: 1px solid red;
-}
 .our_work {
   margin-left: 10%;
   margin-right: 10%;
@@ -1568,10 +1556,12 @@ div.circle {
   text-transform: uppercase;
 }
 .our_work .work .project_3 button:hover,
-.our_work .work .project_3 button:focus {
+.our_work .work .project_3 button:focus,
+.our_work .work .project_3 button:active {
   cursor: pointer;
   background-color: #8c8c8c;
   color: white;
+  outline: none;
 }
 @media only screen and (max-width: 720px) {
   .our_work .work .title,

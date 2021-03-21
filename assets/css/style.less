@@ -1611,21 +1611,6 @@ div.circle {
 
       .box-body {
         padding: 2.3em;
-
-        p {
-          margin-bottom: 1.5em;
-        }
-
-        span {
-          border-bottom: 1px solid grey;
-          padding-bottom: 0.5em;
-          transition: border-bottom 0.3s ease;
-
-          &:hover {
-            cursor: pointer;
-            border-bottom: 1px solid red;
-          }
-        }
       }
     }
   }
@@ -1699,10 +1684,12 @@ div.circle {
         text-transform: uppercase;
 
         &:hover,
-        &:focus {
+        &:focus,
+        &:active {
           cursor: pointer;
           background-color: lighten(@secondaryColor, 10%);
           color: white;
+          outline: none;
         }
       }
     }
