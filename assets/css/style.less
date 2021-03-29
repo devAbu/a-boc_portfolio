@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@primaryColor-home: gold;
+@secondaryColor-home: lighten(black, 7%);
 @primaryColor: darken(gold, 10%);
 @secondaryColor: lighten(black, 45%);
 @box-shadow-right: 6px 6px 10px -3px rgba(150, 142, 150, 0.86);
@@ -25,7 +27,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f3f3f7;
+  background-color: @secondaryColor-home;
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
@@ -897,11 +899,12 @@ div.circle {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: #fafafa;
+    background-color: lighten(@secondaryColor-home, 10%);
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
   }
 
   .form {
@@ -918,13 +921,17 @@ div.circle {
   }
 
   .contact-form {
-    background-color: #1abc9c;
+    background-color: lighten(@secondaryColor-home, 20%);
     position: relative;
   }
 
   .circle2 {
     border-radius: 50%;
-    background: linear-gradient(135deg, transparent 20%, #149279);
+    background: linear-gradient(
+      135deg,
+      transparent 20%,
+      darken(@primaryColor-home, 5%)
+    );
     position: absolute;
   }
 
@@ -947,7 +954,7 @@ div.circle {
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color: #1abc9c;
+    background-color: darken(@primaryColor-home, 5%);
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
@@ -1017,20 +1024,26 @@ div.circle {
 
   .btn {
     padding: 0.6rem 4rem;
-    background-color: #fff;
-    border: 2px solid #fafafa;
+    background-color: transparent;
+    border: 2px solid lighten(@secondaryColor-home, 5%);
     font-size: 0.95rem;
-    color: #1abc9c;
+    color: white;
     line-height: 1;
     border-radius: 25px;
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-  }
 
-  .btn:hover {
-    background-color: transparent;
-    color: #fff;
+    &:hover {
+      cursor: pointer;
+      background-color: lighten(@secondaryColor-home, 5%);
+      color: @primaryColor-home;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
   }
 
   .input-container span {
@@ -1053,7 +1066,7 @@ div.circle {
     opacity: 0;
     transition: 0.3s;
     height: 5px;
-    background-color: #1abc9c;
+    background-color: @secondaryColor-home;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -1082,27 +1095,28 @@ div.circle {
   .contact-info {
     padding: 2.3rem 2.2rem;
     position: relative;
+    background-color: darken(white, 5%);
   }
 
   .contact-info .title {
-    color: #1abc9c;
+    color: @primaryColor-home;
   }
 
   .text {
-    color: #333;
+    color: lighten(@secondaryColor-home, 15%);
     margin: 1.5rem 0 2rem 0;
   }
 
   .information {
     display: flex;
-    color: #555;
+    color: lighten(@secondaryColor-home, 20%);
     margin: 0.7rem 0;
     align-items: center;
     font-size: 0.95rem;
 
     p {
       a {
-        color: #555;
+        color: lighten(@secondaryColor-home, 20%);
         text-decoration: none;
       }
     }
@@ -1130,7 +1144,11 @@ div.circle {
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    background: linear-gradient(45deg, #1abc9c, #149279);
+    background: linear-gradient(
+      45deg,
+      lighten(@primaryColor-home, 15%),
+      darken(@primaryColor-home, 20%)
+    );
     color: #fff;
     text-align: center;
     line-height: 35px;
@@ -1147,7 +1165,7 @@ div.circle {
     position: absolute;
     width: 110px;
     height: 100px;
-    border: 22px solid #1abc9c;
+    border: 22px solid @primaryColor-home;
     border-radius: 50%;
     bottom: -77px;
     right: 50px;
@@ -1159,7 +1177,11 @@ div.circle {
     width: 500px;
     height: 500px;
     border-radius: 50%;
-    background: linear-gradient(to bottom, #1cd4af, #159b80);
+    background: linear-gradient(
+      to bottom,
+      lighten(@primaryColor-home, 15%),
+      darken(@primaryColor-home, 20%)
+    );
     bottom: 50%;
     right: 50%;
     transform: translate(-40%, 38%);
@@ -1170,12 +1192,17 @@ div.circle {
     position: absolute;
     width: 360px;
     height: 360px;
-    background-color: #fafafa;
+    background: linear-gradient(
+      to left,
+      darken(white, 20%),
+      lighten(@secondaryColor-home, 15%)
+    );
     border-radius: 50%;
     top: calc(50% - 180px);
     left: calc(50% - 180px);
   }
 
+  /* SLIKA */
   .square2 {
     position: absolute;
     height: 400px;
@@ -1274,51 +1301,8 @@ div.circle {
     }
   }
 }
-/* 
-.topnav {
-  overflow: hidden;
-  background-color: #e2e1dd;
 
-  a {
-    float: left;
-    color: #618179;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-
-    &:hover {
-      background-color: #ddd;
-      color: black;
-    }
-  }
-}
-
-.navbar {
-  .topnav {
-    a.left img {
-      margin-top: 5px;
-      margin-left: 10px;
-      width: 20px;
-    }
-    a.middle img {
-      width: 50px;
-    }
-    div.right {
-      float: right;
-      button {
-        background-color: none;
-        color: #618179;
-        border: 1px solid #618179;
-        border-radius: 25px;
-        width: 100px;
-        height: 50px;
-        font-size: 16px;
-      }
-    }
-  }
-} */
-
+// NAVBAR
 .newNav {
   nav {
     position: fixed;
@@ -1330,14 +1314,8 @@ div.circle {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5d4954;
+    background-color: lighten(@secondaryColor-home, 10%);
 
-    .logo {
-      color: rgb(226, 226, 226);
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      font-size: 20px;
-    }
     .nav-links {
       display: flex;
       justify-content: space-around;
@@ -1352,6 +1330,10 @@ div.circle {
         letter-spacing: 3px;
         font-weight: bold;
         font-size: 14px;
+
+        &:hover {
+          color: darken(@primaryColor-home, 10%);
+        }
       }
     }
     .burger {
@@ -1361,7 +1343,7 @@ div.circle {
     .burger div {
       width: 25px;
       height: 3px;
-      background-color: rgb(226, 226, 226);
+      background-color: darken(@primaryColor-home, 20%);
       margin: 5px;
       transition: all 0.3s ease;
     }
@@ -1390,7 +1372,7 @@ div.circle {
         right: 0;
         height: 92vh;
         top: 8vh;
-        background-color: #5d4954;
+        background-color: lighten(@secondaryColor-home, 10%);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1491,13 +1473,13 @@ div.circle {
     h3 {
       font-size: 32px;
       font-weight: 700;
-      color: #618179;
+      color: @primaryColor-home;
       text-align: center;
     }
     p {
       font-size: 14px;
       font-weight: 400;
-      color: #618179;
+      color: lighten(@secondaryColor-home, 70%);
       text-align: center;
     }
   }
@@ -1512,32 +1494,48 @@ div.circle {
       justify-content: flex-end;
       transform: rotate(180deg);
       text-align: left;
-      color: #618179;
+      color: @primaryColor-home;
       font-size: 32px;
     }
     .box {
       flex: 5%;
       margin: 0 2em;
       padding: 0.8em 1.2em;
-      border: 1px solid #618179;
+      border: 1px solid darken(@primaryColor-home, 15%);
       border-radius: 15px;
+
+      hr {
+        border: 1px solid darken(@primaryColor, 15%);
+      }
+
+      h1,
+      p {
+        color: darken(white, 10%);
+      }
+
+      p {
+        padding: 0.5em 0;
+      }
 
       button {
         margin: 1.5em 0;
         padding: 15px 25px 10px;
-        color: black;
-        border: 2px solid lighten(@secondaryColor, 20%);
+        color: white;
+        border: 2px solid lighten(@secondaryColor-home, 20%);
         border-radius: 25px;
         text-align: center;
         transition: background-color 0.3s ease, color 0.3s ease;
         text-transform: uppercase;
+        background-color: transparent;
 
-        &:hover,
+        &:hover {
+          cursor: pointer;
+          background-color: lighten(@secondaryColor-home, 5%);
+          color: @primaryColor-home;
+        }
+
         &:focus,
         &:active {
-          cursor: pointer;
-          background-color: lighten(@secondaryColor, 10%);
-          color: white;
           outline: none;
         }
       }
@@ -1586,7 +1584,7 @@ div.circle {
       text-align: center;
       font-size: 32px;
       font-weight: 700;
-      color: #618179;
+      color: @primaryColor-home;
     }
   }
 
@@ -1596,20 +1594,22 @@ div.circle {
     justify-content: space-between;
 
     .box {
-      border: 1px solid darken(@primaryColor, 15%);
+      border: 1px solid darken(@primaryColor-home, 15%);
       border-radius: 15px;
       flex: 30%;
       margin: 1.5em 1em;
 
       .box-title {
         padding: 1.5em;
-        border-bottom: 1px solid darken(@primaryColor, 15%);
+        border-bottom: 1px solid darken(@primaryColor-home, 15%);
         display: flex;
         justify-content: space-between;
+        color: darken(white, 10%);
       }
 
       .box-body {
         padding: 2.3em;
+        color: darken(white, 10%);
       }
     }
   }
@@ -1635,10 +1635,11 @@ div.circle {
       h3 {
         font-size: 102px;
         font-weight: 700;
-        color: #618179;
+        color: @primaryColor-home;
       }
       p {
         padding-left: 10%;
+        color: darken(white, 10%);
       }
     }
 
@@ -1661,19 +1662,22 @@ div.circle {
       button {
         margin: 2.5em 2em;
         padding: 15px 25px 10px;
-        color: black;
-        border: 2px solid lighten(@secondaryColor, 20%);
+        color: white;
+        border: 2px solid lighten(@secondaryColor-home, 20%);
         border-radius: 25px;
         text-align: center;
         transition: background-color 0.3s ease, color 0.3s ease;
         text-transform: uppercase;
+        background-color: transparent;
 
-        &:hover,
+        &:hover {
+          cursor: pointer;
+          background-color: lighten(@secondaryColor-home, 5%);
+          color: @primaryColor-home;
+        }
+
         &:focus,
         &:active {
-          cursor: pointer;
-          background-color: lighten(@secondaryColor, 10%);
-          color: white;
           outline: none;
         }
       }

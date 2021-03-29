@@ -12,7 +12,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f3f3f7;
+  background-color: #121212;
   user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
@@ -877,15 +877,19 @@ div.circle {
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLDD4V1s.ttf) format('truetype');
 }
+.contact {
+  /* SLIKA */
+}
 .contact .container {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-color: #fafafa;
+  background-color: #2b2b2b;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 .contact .form {
   text-align: center;
@@ -900,12 +904,12 @@ div.circle {
   grid-template-columns: repeat(2, 1fr);
 }
 .contact .contact-form {
-  background-color: #1abc9c;
+  background-color: #454545;
   position: relative;
 }
 .contact .circle2 {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
+  background: linear-gradient(135deg, transparent 20%, #e6c200);
   position: absolute;
 }
 .contact .circle2.one {
@@ -925,7 +929,7 @@ div.circle {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: #e6c200;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -987,10 +991,10 @@ div.circle {
 }
 .contact .btn {
   padding: 0.6rem 4rem;
-  background-color: #fff;
-  border: 2px solid #fafafa;
+  background-color: transparent;
+  border: 2px solid #1f1f1f;
   font-size: 0.95rem;
-  color: #1abc9c;
+  color: white;
   line-height: 1;
   border-radius: 25px;
   outline: none;
@@ -998,8 +1002,13 @@ div.circle {
   transition: 0.3s;
 }
 .contact .btn:hover {
-  background-color: transparent;
-  color: #fff;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  color: gold;
+}
+.contact .btn:focus,
+.contact .btn:active {
+  outline: none;
 }
 .contact .input-container span {
   position: absolute;
@@ -1020,7 +1029,7 @@ div.circle {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background-color: #121212;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -1044,23 +1053,24 @@ div.circle {
 .contact .contact-info {
   padding: 2.3rem 2.2rem;
   position: relative;
+  background-color: #f2f2f2;
 }
 .contact .contact-info .title {
-  color: #1abc9c;
+  color: gold;
 }
 .contact .text {
-  color: #333;
+  color: #383838;
   margin: 1.5rem 0 2rem 0;
 }
 .contact .information {
   display: flex;
-  color: #555;
+  color: #454545;
   margin: 0.7rem 0;
   align-items: center;
   font-size: 0.95rem;
 }
 .contact .information p a {
-  color: #555;
+  color: #454545;
   text-decoration: none;
 }
 .contact .icon {
@@ -1081,7 +1091,7 @@ div.circle {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, #149279);
+  background: linear-gradient(45deg, #ffe34d, #998100);
   color: #fff;
   text-align: center;
   line-height: 35px;
@@ -1096,7 +1106,7 @@ div.circle {
   position: absolute;
   width: 110px;
   height: 100px;
-  border: 22px solid #1abc9c;
+  border: 22px solid gold;
   border-radius: 50%;
   bottom: -77px;
   right: 50px;
@@ -1107,7 +1117,7 @@ div.circle {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #1cd4af, #159b80);
+  background: linear-gradient(to bottom, #ffe34d, #998100);
   bottom: 50%;
   right: 50%;
   transform: translate(-40%, 38%);
@@ -1117,7 +1127,7 @@ div.circle {
   position: absolute;
   width: 360px;
   height: 360px;
-  background-color: #fafafa;
+  background: linear-gradient(to left, #cccccc, #383838);
   border-radius: 50%;
   top: calc(50% - 180px);
   left: calc(50% - 180px);
@@ -1199,50 +1209,6 @@ div.circle {
     margin-left: auto;
   }
 }
-/* 
-.topnav {
-  overflow: hidden;
-  background-color: #e2e1dd;
-
-  a {
-    float: left;
-    color: #618179;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-
-    &:hover {
-      background-color: #ddd;
-      color: black;
-    }
-  }
-}
-
-.navbar {
-  .topnav {
-    a.left img {
-      margin-top: 5px;
-      margin-left: 10px;
-      width: 20px;
-    }
-    a.middle img {
-      width: 50px;
-    }
-    div.right {
-      float: right;
-      button {
-        background-color: none;
-        color: #618179;
-        border: 1px solid #618179;
-        border-radius: 25px;
-        width: 100px;
-        height: 50px;
-        font-size: 16px;
-      }
-    }
-  }
-} */
 .newNav nav {
   position: fixed;
   top: 0;
@@ -1253,13 +1219,7 @@ div.circle {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: #5d4954;
-}
-.newNav nav .logo {
-  color: #e2e2e2;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
+  background-color: #2b2b2b;
 }
 .newNav nav .nav-links {
   display: flex;
@@ -1276,6 +1236,9 @@ div.circle {
   font-weight: bold;
   font-size: 14px;
 }
+.newNav nav .nav-links a:hover {
+  color: #ccac00;
+}
 .newNav nav .burger {
   display: none;
   cursor: pointer;
@@ -1283,7 +1246,7 @@ div.circle {
 .newNav nav .burger div {
   width: 25px;
   height: 3px;
-  background-color: #e2e2e2;
+  background-color: #998100;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -1302,7 +1265,7 @@ div.circle {
     right: 0;
     height: 92vh;
     top: 8vh;
-    background-color: #5d4954;
+    background-color: #2b2b2b;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1387,13 +1350,13 @@ div.circle {
 .DrugiDio div.Naslov h3 {
   font-size: 32px;
   font-weight: 700;
-  color: #618179;
+  color: gold;
   text-align: center;
 }
 .DrugiDio div.Naslov p {
   font-size: 14px;
   font-weight: 400;
-  color: #618179;
+  color: #c4c4c4;
   text-align: center;
 }
 .DrugiDio div.knowUs {
@@ -1407,32 +1370,44 @@ div.circle {
   justify-content: flex-end;
   transform: rotate(180deg);
   text-align: left;
-  color: #618179;
+  color: gold;
   font-size: 32px;
 }
 .DrugiDio div.knowUs .box {
   flex: 5%;
   margin: 0 2em;
   padding: 0.8em 1.2em;
-  border: 1px solid #618179;
+  border: 1px solid #b39700;
   border-radius: 15px;
+}
+.DrugiDio div.knowUs .box hr {
+  border: 1px solid #806c00;
+}
+.DrugiDio div.knowUs .box h1,
+.DrugiDio div.knowUs .box p {
+  color: #e6e6e6;
+}
+.DrugiDio div.knowUs .box p {
+  padding: 0.5em 0;
 }
 .DrugiDio div.knowUs .box button {
   margin: 1.5em 0;
   padding: 15px 25px 10px;
-  color: black;
-  border: 2px solid #a6a6a6;
+  color: white;
+  border: 2px solid #454545;
   border-radius: 25px;
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-transform: uppercase;
+  background-color: transparent;
 }
-.DrugiDio div.knowUs .box button:hover,
+.DrugiDio div.knowUs .box button:hover {
+  cursor: pointer;
+  background-color: #1f1f1f;
+  color: gold;
+}
 .DrugiDio div.knowUs .box button:focus,
 .DrugiDio div.knowUs .box button:active {
-  cursor: pointer;
-  background-color: #8c8c8c;
-  color: white;
   outline: none;
 }
 @media only screen and (max-width: 720px) {
@@ -1469,7 +1444,7 @@ div.circle {
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-  color: #618179;
+  color: gold;
 }
 .our_services .services {
   display: flex;
@@ -1477,19 +1452,21 @@ div.circle {
   justify-content: space-between;
 }
 .our_services .services .box {
-  border: 1px solid #806c00;
+  border: 1px solid #b39700;
   border-radius: 15px;
   flex: 30%;
   margin: 1.5em 1em;
 }
 .our_services .services .box .box-title {
   padding: 1.5em;
-  border-bottom: 1px solid #806c00;
+  border-bottom: 1px solid #b39700;
   display: flex;
   justify-content: space-between;
+  color: #e6e6e6;
 }
 .our_services .services .box .box-body {
   padding: 2.3em;
+  color: #e6e6e6;
 }
 .our_work {
   margin-left: 10%;
@@ -1511,10 +1488,11 @@ div.circle {
 .our_work .work .title h3 {
   font-size: 102px;
   font-weight: 700;
-  color: #618179;
+  color: gold;
 }
 .our_work .work .title p {
   padding-left: 10%;
+  color: #e6e6e6;
 }
 .our_work .work .project_box {
   flex: 45%;
@@ -1533,19 +1511,21 @@ div.circle {
 .our_work .work .project_3 button {
   margin: 2.5em 2em;
   padding: 15px 25px 10px;
-  color: black;
-  border: 2px solid #a6a6a6;
+  color: white;
+  border: 2px solid #454545;
   border-radius: 25px;
   text-align: center;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-transform: uppercase;
+  background-color: transparent;
 }
-.our_work .work .project_3 button:hover,
+.our_work .work .project_3 button:hover {
+  cursor: pointer;
+  background-color: #1f1f1f;
+  color: gold;
+}
 .our_work .work .project_3 button:focus,
 .our_work .work .project_3 button:active {
-  cursor: pointer;
-  background-color: #8c8c8c;
-  color: white;
   outline: none;
 }
 @media only screen and (max-width: 720px) {
