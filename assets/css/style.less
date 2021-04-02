@@ -1095,7 +1095,7 @@ div.circle {
   .contact-info {
     padding: 2.3rem 2.2rem;
     position: relative;
-    background-color: darken(white, 5%);
+    background-color: darken(white, 10%);
   }
 
   .contact-info .title {
@@ -1488,10 +1488,12 @@ div.circle {
     flex-wrap: wrap;
 
     p.vertical {
+      margin-top: 5rem;
       writing-mode: tb-rl;
       display: flex;
       align-items: flex-start;
       justify-content: flex-end;
+      vertical-align: center;
       transform: rotate(180deg);
       text-align: left;
       color: @primaryColor-home;
@@ -1652,6 +1654,7 @@ div.circle {
       img {
         vertical-align: middle;
         height: 100%;
+        border-radius: 10px;
       }
     }
 

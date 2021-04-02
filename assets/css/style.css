@@ -1053,7 +1053,7 @@ div.circle {
 .contact .contact-info {
   padding: 2.3rem 2.2rem;
   position: relative;
-  background-color: #f2f2f2;
+  background-color: #e6e6e6;
 }
 .contact .contact-info .title {
   color: gold;
@@ -1364,10 +1364,12 @@ div.circle {
   flex-wrap: wrap;
 }
 .DrugiDio div.knowUs p.vertical {
+  margin-top: 5rem;
   writing-mode: tb-rl;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
+  vertical-align: center;
   transform: rotate(180deg);
   text-align: left;
   color: gold;
@@ -1504,6 +1506,7 @@ div.circle {
 .our_work .work .project_box img {
   vertical-align: middle;
   height: 100%;
+  border-radius: 10px;
 }
 .our_work .work .project_3 img {
   height: auto;
