@@ -929,7 +929,7 @@ div.circle {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #e6c200;
+  background-image: linear-gradient(to bottom, #ef5214, #ffe766);
   transform: rotate(45deg);
   top: 50px;
   left: -13px;

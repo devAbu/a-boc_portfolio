@@ -955,7 +955,11 @@ div.circle {
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color: darken(@primaryColor-home, 5%);
+    background-image: linear-gradient(
+      to bottom,
+      lighten(@thirdColor-home, 20%),
+      lighten(@primaryColor-home, 20%)
+    );
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
