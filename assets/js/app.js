@@ -55,7 +55,7 @@ for (const button of btns) {
 function smoothScroll(e) {
   e.preventDefault();
   const href = this.getAttribute("href") || this.getAttribute("class");
-  console.log(href);
+
   const offsetTop = document.querySelector(href).offsetTop - 50;
 
   scroll({
