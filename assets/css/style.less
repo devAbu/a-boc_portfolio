@@ -477,12 +477,13 @@ footer {
 
 // NAVBAR
 .newNav {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
   nav {
-    position: fixed;
     top: 0;
     width: 100%;
     overflow: hidden;
-    z-index: 2222;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -534,25 +535,22 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
   .newNav {
     nav {
       .nav-links {
         overflow: hidden;
         position: absolute;
         right: 0;
-        height: 92vh;
-        top: 8vh;
+        height: 93vh;
+        top: 7vh;
         background-color: lighten(@secondaryColor-home, 10%);
         display: flex;
         flex-direction: column;
         align-items: center;
-        z-index: 999;
         width: 0%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in, width 0.5s ease-in-out;
+        z-index: 9999;
         li {
           opacity: 0;
         }
